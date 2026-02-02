@@ -1,0 +1,1572 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='9422' time_ms='1770040906100'>
+<vm_version>
+<name>
+OpenJDK 64-Bit Server VM
+</name>
+<release>
+21.0.9+10-Ubuntu-124.04
+</release>
+<info>
+OpenJDK 64-Bit Server VM (21.0.9+10-Ubuntu-124.04) for linux-amd64 JRE (21.0.9+10-Ubuntu-124.04), built on 2025-10-23T12:36:23Z by &quot;buildd&quot; with gcc 13.3.0
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-Xbatch -XX:+UnlockDiagnosticVMOptions -XX:-TieredCompilation -XX:CompileThreshold=1000 -XX:+PrintCompilation -XX:+LogCompilation -XX:LogFile=build/hotspot/hotspot_log.xml -XX:CompileCommand=compileonly,ChaseBench::* -XX:CompileCommand=dontinline,ChaseBench::* </args>
+<command>
+ChaseBench
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.version=21.0.9+10-Ubuntu-124.04
+java.vm.name=OpenJDK 64-Bit Server VM
+jdk.debug=release
+sun.boot.library.path=/usr/lib/jvm/java-21-openjdk-amd64/lib
+java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+java.home=/usr/lib/jvm/java-21-openjdk-amd64
+java.class.path=build/hotspot
+java.vm.info=mixed mode, sharing
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=21
+java.vm.vendor=Ubuntu
+sun.java.command=ChaseBench
+sun.java.launcher=SUN_STANDARD
+</properties>
+</vm_arguments>
+<tty>
+<writer thread='9423'/>
+CompileCommand: compileonly ChaseBench.* bool compileonly = true
+CompileCommand: dontinline ChaseBench.* bool dontinline = true
+<blob name='MethodHandlesAdapterBlob' total_size='4224'>
+<sect index='1' capacity='4224' size='382' remaining='3842'/>
+</blob>
+<writer thread='9436'/>
+<thread_logfile thread='9436' filename='/tmp/hs_c9436_pid9422.log'/>
+<writer thread='9423'/>
+### Excluding generation of native wrapper: jdk.internal.misc.Unsafe::getReferenceVolatile
+made not compilable on level 4  jdk.internal.misc.Unsafe::getReferenceVolatile   excluded by CompileCommand
+<make_not_compilable thread='9423' osr='0' level='4' reason='excluded by CompileCommand' method='jdk.internal.misc.Unsafe getReferenceVolatile (Ljava/lang/Object;J)Ljava/lang/Object;' bytes='0' count='128' iicount='128' stamp='0.021'/>
+<task_queued compile_id='1' method='ChaseBench plain_d2 (LChaseBench$Node;)I' bytes='8' count='1408' iicount='1408' blocking='1' stamp='0.026' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+26    1    b        ChaseBench::plain_d2 (8 bytes)
+<nmethod compile_id='1' compiler='c2' entry='0x00007c1df4886a00' size='656' address='0x00007c1df4886890' relocation_offset='344' insts_offset='368' stub_offset='496' scopes_data_offset='536' scopes_pcs_offset='560' dependencies_offset='624' nul_chk_table_offset='632' oops_offset='520' metadata_offset='528' method='ChaseBench plain_d2 (LChaseBench$Node;)I' bytes='8' count='1408' iicount='1408' stamp='0.027'/>
+<writer thread='9423'/>
+<task_queued compile_id='2' method='ChaseBench plain_d3 (LChaseBench$Node;)I' bytes='11' count='1408' iicount='1408' blocking='1' stamp='0.027' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+27    2    b        ChaseBench::plain_d3 (11 bytes)
+<nmethod compile_id='2' compiler='c2' entry='0x00007c1df4890820' size='744' address='0x00007c1df4890690' relocation_offset='344' insts_offset='400' stub_offset='552' scopes_data_offset='592' scopes_pcs_offset='624' dependencies_offset='704' nul_chk_table_offset='712' oops_offset='576' metadata_offset='584' method='ChaseBench plain_d3 (LChaseBench$Node;)I' bytes='11' count='1408' iicount='1408' stamp='0.027'/>
+<writer thread='9423'/>
+<task_queued compile_id='3' method='ChaseBench plain_d5 (LChaseBench$Node;)I' bytes='17' count='1408' iicount='1408' blocking='1' stamp='0.028' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+27    3    b        ChaseBench::plain_d5 (17 bytes)
+<nmethod compile_id='3' compiler='c2' entry='0x00007c1df4890b20' size='848' address='0x00007c1df4890990' relocation_offset='344' insts_offset='400' stub_offset='600' scopes_data_offset='640' scopes_pcs_offset='680' dependencies_offset='792' nul_chk_table_offset='800' oops_offset='624' metadata_offset='632' method='ChaseBench plain_d5 (LChaseBench$Node;)I' bytes='17' count='1408' iicount='1408' stamp='0.028'/>
+<writer thread='9423'/>
+<task_queued compile_id='4' method='ChaseBench plain_d8 (LChaseBench$Node;)I' bytes='26' count='1408' iicount='1408' blocking='1' stamp='0.028' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+28    4    b        ChaseBench::plain_d8 (26 bytes)
+<nmethod compile_id='4' compiler='c2' entry='0x00007c1df488e920' size='1016' address='0x00007c1df488e790' relocation_offset='344' insts_offset='400' stub_offset='680' scopes_data_offset='720' scopes_pcs_offset='776' dependencies_offset='936' nul_chk_table_offset='944' oops_offset='704' metadata_offset='712' method='ChaseBench plain_d8 (LChaseBench$Node;)I' bytes='26' count='1408' iicount='1408' stamp='0.029'/>
+<writer thread='9423'/>
+<task_queued compile_id='5' compile_kind='osr' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.029' comment='tiered' hot_count='3072'/>
+<writer thread='9436'/>
+28    5 %  b        ChaseBench::runPlain @ 4 (54 bytes)
+<nmethod compile_id='5' compile_kind='osr' compiler='c2' entry='0x00007c1df488e440' size='1192' address='0x00007c1df488e290' relocation_offset='344' insts_offset='432' stub_offset='792' scopes_data_offset='888' scopes_pcs_offset='960' dependencies_offset='1088' handler_table_offset='1096' oops_offset='872' metadata_offset='880' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1' stamp='0.030'/>
+<writer thread='9423'/>
+<task_queued compile_id='6' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.030' comment='tiered' hot_count='1'/>
+<writer thread='9436'/>
+29    6    b        ChaseBench::runPlain (54 bytes)
+<nmethod compile_id='6' compiler='c2' entry='0x00007c1df488dfc0' size='1104' address='0x00007c1df488de10' relocation_offset='344' insts_offset='432' stub_offset='736' scopes_data_offset='832' scopes_pcs_offset='888' dependencies_offset='1000' handler_table_offset='1008' oops_offset='816' metadata_offset='824' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1' stamp='0.031'/>
+<writer thread='9423'/>
+<uncommon_trap thread='9423' reason='unstable_if' action='reinterpret' debug_id='0' compile_id='5' compile_kind='osr' compiler='c2' stamp='0.031'>
+<jvms bci='7' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1'/>
+</uncommon_trap>
+<make_not_entrant thread='9423' compile_id='5' compile_kind='osr' compiler='c2' stamp='0.031'/>
+30    5 %           ChaseBench::runPlain @ 4 (54 bytes)   made not entrant
+<task_queued compile_id='7' method='ChaseBench const_d2 (Ljava/lang/Object;)I' bytes='26' count='1408' iicount='1408' blocking='1' stamp='0.031' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+31    7    b        ChaseBench::const_d2 (26 bytes)
+<nmethod compile_id='7' compiler='c2' entry='0x00007c1df488dba0' size='984' address='0x00007c1df488da10' relocation_offset='344' insts_offset='400' stub_offset='696' scopes_data_offset='752' scopes_pcs_offset='824' dependencies_offset='952' nul_chk_table_offset='960' oops_offset='720' metadata_offset='728' method='ChaseBench const_d2 (Ljava/lang/Object;)I' bytes='26' count='1408' iicount='1408' stamp='0.032'/>
+<writer thread='9423'/>
+<task_queued compile_id='8' method='ChaseBench const_d3 (Ljava/lang/Object;)I' bytes='41' count='1408' iicount='1408' blocking='1' stamp='0.032' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+31    8    b        ChaseBench::const_d3 (41 bytes)
+<nmethod compile_id='8' compiler='c2' entry='0x00007c1df488d6c0' size='1208' address='0x00007c1df488d510' relocation_offset='344' insts_offset='432' stub_offset='840' scopes_data_offset='896' scopes_pcs_offset='992' dependencies_offset='1168' nul_chk_table_offset='1176' oops_offset='864' metadata_offset='872' method='ChaseBench const_d3 (Ljava/lang/Object;)I' bytes='41' count='1408' iicount='1408' stamp='0.033'/>
+<writer thread='9423'/>
+<task_queued compile_id='9' method='ChaseBench const_d5 (Ljava/lang/Object;)I' bytes='71' count='1408' iicount='1408' blocking='1' stamp='0.033' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+32    9    b        ChaseBench::const_d5 (71 bytes)
+<nmethod compile_id='9' compiler='c2' entry='0x00007c1df4892360' size='1624' address='0x00007c1df4892190' relocation_offset='344' insts_offset='464' stub_offset='1104' scopes_data_offset='1160' scopes_pcs_offset='1296' dependencies_offset='1568' nul_chk_table_offset='1576' oops_offset='1128' metadata_offset='1136' method='ChaseBench const_d5 (Ljava/lang/Object;)I' bytes='71' count='1408' iicount='1408' stamp='0.034'/>
+<writer thread='9423'/>
+<task_queued compile_id='10' method='ChaseBench const_d8 (Ljava/lang/Object;)I' bytes='118' count='1408' iicount='1408' blocking='1' stamp='0.034' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+33   10    b        ChaseBench::const_d8 (118 bytes)
+<nmethod compile_id='10' compiler='c2' entry='0x00007c1df4891a80' size='2216' address='0x00007c1df4891890' relocation_offset='344' insts_offset='496' stub_offset='1472' scopes_data_offset='1528' scopes_pcs_offset='1720' dependencies_offset='2136' nul_chk_table_offset='2144' oops_offset='1496' metadata_offset='1504' method='ChaseBench const_d8 (Ljava/lang/Object;)I' bytes='118' count='1408' iicount='1408' stamp='0.035'/>
+<writer thread='9423'/>
+<task_queued compile_id='11' compile_kind='osr' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.035' comment='tiered' hot_count='3072'/>
+<writer thread='9436'/>
+35   11 %  b        ChaseBench::runConst @ 4 (54 bytes)
+<nmethod compile_id='11' compile_kind='osr' compiler='c2' entry='0x00007c1df4891540' size='1192' address='0x00007c1df4891390' relocation_offset='344' insts_offset='432' stub_offset='792' scopes_data_offset='888' scopes_pcs_offset='960' dependencies_offset='1088' handler_table_offset='1096' oops_offset='872' metadata_offset='880' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1' stamp='0.036'/>
+<writer thread='9423'/>
+<task_queued compile_id='12' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.036' comment='tiered' hot_count='1'/>
+<writer thread='9436'/>
+36   12    b        ChaseBench::runConst (54 bytes)
+<nmethod compile_id='12' compiler='c2' entry='0x00007c1df488d240' size='1112' address='0x00007c1df488d090' relocation_offset='344' insts_offset='432' stub_offset='744' scopes_data_offset='840' scopes_pcs_offset='896' dependencies_offset='1008' handler_table_offset='1016' oops_offset='824' metadata_offset='832' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1' stamp='0.037'/>
+<writer thread='9423'/>
+<uncommon_trap thread='9423' reason='unstable_if' action='reinterpret' debug_id='0' compile_id='11' compile_kind='osr' compiler='c2' stamp='0.037'>
+<jvms bci='7' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1'/>
+</uncommon_trap>
+<make_not_entrant thread='9423' compile_id='11' compile_kind='osr' compiler='c2' stamp='0.037'/>
+37   11 %           ChaseBench::runConst @ 4 (54 bytes)   made not entrant
+<task_queued compile_id='13' method='ChaseBench dyn_d2 (Ljava/lang/Object;II)I' bytes='22' count='1408' iicount='1408' blocking='1' stamp='0.038' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+37   13    b        ChaseBench::dyn_d2 (22 bytes)
+<nmethod compile_id='13' compiler='c2' entry='0x00007c1df4890ea0' size='1016' address='0x00007c1df4890d10' relocation_offset='344' insts_offset='400' stub_offset='688' scopes_data_offset='744' scopes_pcs_offset='856' dependencies_offset='984' nul_chk_table_offset='992' oops_offset='712' metadata_offset='720' method='ChaseBench dyn_d2 (Ljava/lang/Object;II)I' bytes='22' count='1408' iicount='1408' stamp='0.038'/>
+<writer thread='9423'/>
+<task_queued compile_id='14' method='ChaseBench dyn_d3 (Ljava/lang/Object;III)I' bytes='37' count='1408' iicount='1408' blocking='1' stamp='0.038' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+38   14    b        ChaseBench::dyn_d3 (37 bytes)
+<nmethod compile_id='14' compiler='c2' entry='0x00007c1df48943c0' size='1328' address='0x00007c1df4894210' relocation_offset='344' insts_offset='432' stub_offset='864' scopes_data_offset='920' scopes_pcs_offset='1112' dependencies_offset='1288' nul_chk_table_offset='1296' oops_offset='888' metadata_offset='896' method='ChaseBench dyn_d3 (Ljava/lang/Object;III)I' bytes='37' count='1408' iicount='1408' stamp='0.039'/>
+<writer thread='9423'/>
+<task_queued compile_id='15' method='ChaseBench dyn_d5 (Ljava/lang/Object;IIIII)I' bytes='65' count='1408' iicount='1408' blocking='1' stamp='0.039' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+39   15    b        ChaseBench::dyn_d5 (65 bytes)
+<nmethod compile_id='15' compiler='c2' entry='0x00007c1df4893be0' size='2000' address='0x00007c1df4893a10' relocation_offset='344' insts_offset='464' stub_offset='1216' scopes_data_offset='1272' scopes_pcs_offset='1672' dependencies_offset='1944' nul_chk_table_offset='1952' oops_offset='1240' metadata_offset='1248' method='ChaseBench dyn_d5 (Ljava/lang/Object;IIIII)I' bytes='65' count='1408' iicount='1408' stamp='0.040'/>
+<writer thread='9423'/>
+<task_queued compile_id='16' method='ChaseBench dyn_d8 (Ljava/lang/Object;IIIIIIII)I' bytes='107' count='1408' iicount='1408' blocking='1' stamp='0.040' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+40   16    b        ChaseBench::dyn_d8 (107 bytes)
+<nmethod compile_id='16' compiler='c2' entry='0x00007c1df4892f80' size='3064' address='0x00007c1df4892d90' relocation_offset='344' insts_offset='496' stub_offset='1624' scopes_data_offset='1680' scopes_pcs_offset='2568' dependencies_offset='2984' nul_chk_table_offset='2992' oops_offset='1648' metadata_offset='1656' method='ChaseBench dyn_d8 (Ljava/lang/Object;IIIIIIII)I' bytes='107' count='1408' iicount='1408' stamp='0.041'/>
+<writer thread='9423'/>
+<task_queued compile_id='17' compile_kind='osr' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.042' comment='tiered' hot_count='3072'/>
+<writer thread='9436'/>
+41   17 %  b        ChaseBench::runDyn @ 4 (148 bytes)
+<nmethod compile_id='17' compile_kind='osr' compiler='c2' entry='0x00007c1df4896040' size='1496' address='0x00007c1df4895e90' relocation_offset='344' insts_offset='432' stub_offset='1024' scopes_data_offset='1120' scopes_pcs_offset='1264' dependencies_offset='1392' handler_table_offset='1400' oops_offset='1104' metadata_offset='1112' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1' stamp='0.043'/>
+<writer thread='9423'/>
+<task_queued compile_id='18' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.043' comment='tiered' hot_count='1'/>
+<writer thread='9436'/>
+42   18    b        ChaseBench::runDyn (148 bytes)
+<nmethod compile_id='18' compiler='c2' entry='0x00007c1df4895a40' size='1432' address='0x00007c1df4895890' relocation_offset='344' insts_offset='432' stub_offset='1000' scopes_data_offset='1096' scopes_pcs_offset='1216' dependencies_offset='1328' handler_table_offset='1336' oops_offset='1080' metadata_offset='1088' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1' stamp='0.044'/>
+<writer thread='9423'/>
+<uncommon_trap thread='9423' reason='unstable_if' action='reinterpret' debug_id='0' compile_id='17' compile_kind='osr' compiler='c2' stamp='0.044'>
+<jvms bci='7' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1'/>
+</uncommon_trap>
+<make_not_entrant thread='9423' compile_id='17' compile_kind='osr' compiler='c2' stamp='0.044'/>
+44   17 %           ChaseBench::runDyn @ 4 (148 bytes)   made not entrant
+<task_queued compile_id='19' method='ChaseBench checks_d2 (Ljava/lang/Object;II)I' bytes='115' count='1408' iicount='1408' blocking='1' stamp='0.045' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+45   19    b        ChaseBench::checks_d2 (115 bytes)
+<nmethod compile_id='19' compiler='c2' entry='0x00007c1df48929a0' size='1040' address='0x00007c1df4892810' relocation_offset='344' insts_offset='400' stub_offset='688' scopes_data_offset='744' scopes_pcs_offset='880' dependencies_offset='1008' nul_chk_table_offset='1016' oops_offset='712' metadata_offset='720' method='ChaseBench checks_d2 (Ljava/lang/Object;II)I' bytes='115' count='1408' iicount='1408' stamp='0.046'/>
+<writer thread='9423'/>
+<task_queued compile_id='20' method='ChaseBench checks_d3 (Ljava/lang/Object;III)I' bytes='179' count='1408' iicount='1408' blocking='1' stamp='0.046' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+45   20    b        ChaseBench::checks_d3 (179 bytes)
+<nmethod compile_id='20' compiler='c2' entry='0x00007c1df48954c0' size='1344' address='0x00007c1df4895310' relocation_offset='344' insts_offset='432' stub_offset='856' scopes_data_offset='912' scopes_pcs_offset='1128' dependencies_offset='1304' nul_chk_table_offset='1312' oops_offset='880' metadata_offset='888' method='ChaseBench checks_d3 (Ljava/lang/Object;III)I' bytes='179' count='1408' iicount='1408' stamp='0.047'/>
+<writer thread='9423'/>
+<task_queued compile_id='21' method='ChaseBench checks_d5 (Ljava/lang/Object;IIIII)I' bytes='307' count='1408' iicount='1408' blocking='1' stamp='0.047' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+46   21    b        ChaseBench::checks_d5 (307 bytes)
+<nmethod compile_id='21' compiler='c2' entry='0x00007c1df4894ce0' size='2008' address='0x00007c1df4894b10' relocation_offset='344' insts_offset='464' stub_offset='1168' scopes_data_offset='1224' scopes_pcs_offset='1680' dependencies_offset='1952' nul_chk_table_offset='1960' oops_offset='1192' metadata_offset='1200' method='ChaseBench checks_d5 (Ljava/lang/Object;IIIII)I' bytes='307' count='1408' iicount='1408' stamp='0.048'/>
+<writer thread='9423'/>
+<task_queued compile_id='22' method='ChaseBench checks_d8 (Ljava/lang/Object;IIIIIIII)I' bytes='499' count='1408' iicount='1408' blocking='1' stamp='0.048' comment='tiered' hot_count='1408'/>
+<writer thread='9436'/>
+47   22    b        ChaseBench::checks_d8 (499 bytes)
+<nmethod compile_id='22' compiler='c2' entry='0x00007c1df4897780' size='3064' address='0x00007c1df4897590' relocation_offset='344' insts_offset='496' stub_offset='1536' scopes_data_offset='1592' scopes_pcs_offset='2568' dependencies_offset='2984' nul_chk_table_offset='2992' oops_offset='1560' metadata_offset='1568' method='ChaseBench checks_d8 (Ljava/lang/Object;IIIIIIII)I' bytes='499' count='1408' iicount='1408' stamp='0.049'/>
+<writer thread='9423'/>
+<task_queued compile_id='23' compile_kind='osr' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.050' comment='tiered' hot_count='3072'/>
+<writer thread='9436'/>
+49   23 %  b        ChaseBench::runChecks @ 4 (148 bytes)
+<nmethod compile_id='23' compile_kind='osr' compiler='c2' entry='0x00007c1df4897140' size='1496' address='0x00007c1df4896f90' relocation_offset='344' insts_offset='432' stub_offset='1024' scopes_data_offset='1120' scopes_pcs_offset='1264' dependencies_offset='1392' handler_table_offset='1400' oops_offset='1104' metadata_offset='1112' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1' stamp='0.051'/>
+<writer thread='9423'/>
+<task_queued compile_id='24' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.051' comment='tiered' hot_count='1'/>
+<writer thread='9436'/>
+50   24    b        ChaseBench::runChecks (148 bytes)
+<nmethod compile_id='24' compiler='c2' entry='0x00007c1df4896b40' size='1432' address='0x00007c1df4896990' relocation_offset='344' insts_offset='432' stub_offset='1000' scopes_data_offset='1096' scopes_pcs_offset='1216' dependencies_offset='1328' handler_table_offset='1336' oops_offset='1080' metadata_offset='1088' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1' stamp='0.052'/>
+<writer thread='9423'/>
+<uncommon_trap thread='9423' reason='unstable_if' action='reinterpret' debug_id='0' compile_id='23' compile_kind='osr' compiler='c2' stamp='0.052'>
+<jvms bci='7' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1'/>
+</uncommon_trap>
+<make_not_entrant thread='9423' compile_id='23' compile_kind='osr' compiler='c2' stamp='0.052'/>
+52   23 %           ChaseBench::runChecks @ 4 (148 bytes)   made not entrant
+<statistics type='deoptimization'>
+Deoptimization traps recorded:
+     4 (100.0%) total
+         unstable_if/reinterpret/if_icmpge: 4 (100.0%)
+</statistics>
+<writer thread='9430'/>
+<destroy_vm stamp='0.053'/>
+<tty_done stamp='0.054'/>
+</tty>
+<compilation_log thread='9436'>
+<start_compile_thread name='C2 CompilerThread0' thread='9436' process='9422' stamp='0.020'/>
+<task compile_id='1' method='ChaseBench plain_d2 (LChaseBench$Node;)I' bytes='8' count='1408' iicount='1408' blocking='1' stamp='0.026'>
+<type id='1213' name='int'/>
+<klass id='1392' name='ChaseBench$Node' flags='8'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1393' holder='1391' name='plain_d2' return='1213' arguments='1392' flags='8' bytes='8' iicount='1408'/>
+<parse method='1393' uses='1408.000000' stamp='0.027'>
+<bc code='180' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='4'/>
+<uncommon_trap bci='4' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<parse_done stamp='0.027'/>
+</parse>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='266' nmethods='1' adapters='207' free_code_cache='49747200'/>
+<task_done success='1' nmsize='152' count='1408' stamp='0.027'/>
+</task>
+<task compile_id='2' method='ChaseBench plain_d3 (LChaseBench$Node;)I' bytes='11' count='1408' iicount='1408' blocking='1' stamp='0.027'>
+<type id='1213' name='int'/>
+<klass id='1392' name='ChaseBench$Node' flags='8'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1393' holder='1391' name='plain_d3' return='1213' arguments='1392' flags='8' bytes='11' iicount='1408'/>
+<parse method='1393' uses='1408.000000' stamp='0.027'>
+<bc code='180' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='4'/>
+<uncommon_trap bci='4' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='7'/>
+<uncommon_trap bci='7' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<parse_done stamp='0.027'/>
+</parse>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='267' nmethods='2' adapters='207' free_code_cache='49746432'/>
+<task_done success='1' nmsize='176' count='1408' stamp='0.027'/>
+</task>
+<task compile_id='3' method='ChaseBench plain_d5 (LChaseBench$Node;)I' bytes='17' count='1408' iicount='1408' blocking='1' stamp='0.028'>
+<type id='1213' name='int'/>
+<klass id='1392' name='ChaseBench$Node' flags='8'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1393' holder='1391' name='plain_d5' return='1213' arguments='1392' flags='8' bytes='17' iicount='1408'/>
+<parse method='1393' uses='1408.000000' stamp='0.028'>
+<bc code='180' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='4'/>
+<uncommon_trap bci='4' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='7'/>
+<uncommon_trap bci='7' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='10'/>
+<uncommon_trap bci='10' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='13'/>
+<uncommon_trap bci='13' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<parse_done stamp='0.028'/>
+</parse>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='268' nmethods='3' adapters='207' free_code_cache='49745536'/>
+<task_done success='1' nmsize='224' count='1408' stamp='0.028'/>
+</task>
+<task compile_id='4' method='ChaseBench plain_d8 (LChaseBench$Node;)I' bytes='26' count='1408' iicount='1408' blocking='1' stamp='0.028'>
+<type id='1213' name='int'/>
+<klass id='1392' name='ChaseBench$Node' flags='8'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1393' holder='1391' name='plain_d8' return='1213' arguments='1392' flags='8' bytes='26' iicount='1408'/>
+<parse method='1393' uses='1408.000000' stamp='0.028'>
+<bc code='180' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='4'/>
+<uncommon_trap bci='4' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='7'/>
+<uncommon_trap bci='7' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='10'/>
+<uncommon_trap bci='10' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='13'/>
+<uncommon_trap bci='13' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='16'/>
+<uncommon_trap bci='16' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='19'/>
+<uncommon_trap bci='19' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<bc code='180' bci='22'/>
+<uncommon_trap bci='22' reason='null_check' action='maybe_recompile' debug_id='0'/>
+<parse_done stamp='0.028'/>
+</parse>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='269' nmethods='4' adapters='207' free_code_cache='49744384'/>
+<task_done success='1' nmsize='304' count='1408' stamp='0.029'/>
+</task>
+<task compile_id='5' compile_kind='osr' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.029'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runPlain' return='1213' flags='8' bytes='54' iicount='1'/>
+<parse method='1392' uses='1.000000' osr_bci='4' stamp='0.029'>
+<uncommon_trap bci='4' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='162' bci='7'/>
+<branch target_bci='52' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='184' bci='14'/>
+<klass id='1394' name='ChaseBench$Node' flags='8'/>
+<method id='1395' holder='1391' name='plain_d2' return='1213' arguments='1394' flags='8' bytes='8' compile_id='1' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='14'/>
+<bc code='184' bci='23'/>
+<method id='1396' holder='1391' name='plain_d3' return='1213' arguments='1394' flags='8' bytes='11' compile_id='2' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='23'/>
+<bc code='184' bci='32'/>
+<method id='1397' holder='1391' name='plain_d5' return='1213' arguments='1394' flags='8' bytes='17' compile_id='3' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='32'/>
+<bc code='184' bci='41'/>
+<method id='1398' holder='1391' name='plain_d8' return='1213' arguments='1394' flags='8' bytes='26' compile_id='4' compiler='c2' iicount='1408'/>
+<call method='1398' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='41'/>
+<parse_done stamp='0.029'/>
+</parse>
+<loop_tree>
+<loop idx='197' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='197' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='197' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='197' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='197' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='270' nmethods='5' adapters='207' free_code_cache='49743104'/>
+<task_done success='1' nmsize='440' count='1' backedge_count='3072' stamp='0.030'/>
+</task>
+<task compile_id='6' method='ChaseBench runPlain ()I' bytes='54' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.030'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runPlain' return='1213' flags='8' bytes='54' iicount='1'/>
+<parse method='1392' uses='1.000000' stamp='0.030'>
+<bc code='162' bci='7'/>
+<branch target_bci='52' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='184' bci='14'/>
+<klass id='1394' name='ChaseBench$Node' flags='8'/>
+<method id='1395' holder='1391' name='plain_d2' return='1213' arguments='1394' flags='8' bytes='8' compile_id='1' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='14'/>
+<bc code='184' bci='23'/>
+<method id='1396' holder='1391' name='plain_d3' return='1213' arguments='1394' flags='8' bytes='11' compile_id='2' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='23'/>
+<bc code='184' bci='32'/>
+<method id='1397' holder='1391' name='plain_d5' return='1213' arguments='1394' flags='8' bytes='17' compile_id='3' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='32'/>
+<bc code='184' bci='41'/>
+<method id='1398' holder='1391' name='plain_d8' return='1213' arguments='1394' flags='8' bytes='26' compile_id='4' compiler='c2' iicount='1408'/>
+<call method='1398' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='41'/>
+<bc code='162' bci='7'/>
+<branch target_bci='52' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<parse_done stamp='0.030'/>
+</parse>
+<loop_tree>
+<loop idx='191' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='191' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='191' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='191' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='191' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='271' nmethods='6' adapters='207' free_code_cache='49741952'/>
+<task_done success='1' nmsize='384' count='1' backedge_count='3072' stamp='0.031'/>
+</task>
+<task compile_id='7' method='ChaseBench const_d2 (Ljava/lang/Object;)I' bytes='26' count='1408' iicount='1408' blocking='1' stamp='0.031'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='const_d2' return='1213' arguments='1220' flags='8' bytes='26' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.032'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='10'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='11'/>
+<uncommon_trap bci='11' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='23'/>
+<observe that='!need_range_check'/>
+<bc code='46' bci='24'/>
+<uncommon_trap bci='24' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.032'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='272' nmethods='7' adapters='207' free_code_cache='49740928'/>
+<task_done success='1' nmsize='320' count='1408' stamp='0.032'/>
+</task>
+<task compile_id='8' method='ChaseBench const_d3 (Ljava/lang/Object;)I' bytes='41' count='1408' iicount='1408' blocking='1' stamp='0.032'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='const_d3' return='1213' arguments='1220' flags='8' bytes='41' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.032'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='10'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='11'/>
+<uncommon_trap bci='11' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='23'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='24'/>
+<uncommon_trap bci='24' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='27'/>
+<uncommon_trap bci='27' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='27' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='38'/>
+<observe that='!need_range_check'/>
+<bc code='46' bci='39'/>
+<uncommon_trap bci='39' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.032'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='273' nmethods='8' adapters='207' free_code_cache='49739648'/>
+<task_done success='1' nmsize='432' count='1408' stamp='0.033'/>
+</task>
+<task compile_id='9' method='ChaseBench const_d5 (Ljava/lang/Object;)I' bytes='71' count='1408' iicount='1408' blocking='1' stamp='0.033'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='const_d5' return='1213' arguments='1220' flags='8' bytes='71' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.033'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='10'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='11'/>
+<uncommon_trap bci='11' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='23'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='24'/>
+<uncommon_trap bci='24' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='27'/>
+<uncommon_trap bci='27' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='27' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='38'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='39'/>
+<uncommon_trap bci='39' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='42'/>
+<uncommon_trap bci='42' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='42' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='53'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='54'/>
+<uncommon_trap bci='54' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='57'/>
+<uncommon_trap bci='57' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='57' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='68'/>
+<observe that='!need_range_check'/>
+<bc code='46' bci='69'/>
+<uncommon_trap bci='69' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.033'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='274' nmethods='9' adapters='207' free_code_cache='49737984'/>
+<task_done success='1' nmsize='664' count='1408' stamp='0.034'/>
+</task>
+<task compile_id='10' method='ChaseBench const_d8 (Ljava/lang/Object;)I' bytes='118' count='1408' iicount='1408' blocking='1' stamp='0.034'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='const_d8' return='1213' arguments='1220' flags='8' bytes='118' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.034'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='10'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='11'/>
+<uncommon_trap bci='11' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='23'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='24'/>
+<uncommon_trap bci='24' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='27'/>
+<uncommon_trap bci='27' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='27' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='38'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='39'/>
+<uncommon_trap bci='39' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='42'/>
+<uncommon_trap bci='42' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='42' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='53'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='54'/>
+<uncommon_trap bci='54' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='57'/>
+<uncommon_trap bci='57' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='57' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='68'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='69'/>
+<uncommon_trap bci='69' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='72'/>
+<uncommon_trap bci='72' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='72' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='83'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='84'/>
+<uncommon_trap bci='84' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='87'/>
+<uncommon_trap bci='87' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='87' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='99'/>
+<observe that='!need_range_check'/>
+<bc code='50' bci='100'/>
+<uncommon_trap bci='100' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='103'/>
+<uncommon_trap bci='103' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='103' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='115'/>
+<observe that='!need_range_check'/>
+<bc code='46' bci='116'/>
+<uncommon_trap bci='116' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.034'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='275' nmethods='10' adapters='207' free_code_cache='49735680'/>
+<task_done success='1' nmsize='1000' count='1408' stamp='0.035'/>
+</task>
+<task compile_id='11' compile_kind='osr' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.035'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runConst' return='1213' flags='8' bytes='54' iicount='1'/>
+<parse method='1392' uses='1.000000' osr_bci='4' stamp='0.035'>
+<uncommon_trap bci='4' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='162' bci='7'/>
+<branch target_bci='52' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='184' bci='14'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1391' name='const_d2' return='1213' arguments='1220' flags='8' bytes='26' compile_id='7' compiler='c2' iicount='1408'/>
+<call method='1394' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='14'/>
+<bc code='184' bci='23'/>
+<method id='1395' holder='1391' name='const_d3' return='1213' arguments='1220' flags='8' bytes='41' compile_id='8' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='23'/>
+<bc code='184' bci='32'/>
+<method id='1396' holder='1391' name='const_d5' return='1213' arguments='1220' flags='8' bytes='71' compile_id='9' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='32'/>
+<bc code='184' bci='41'/>
+<method id='1397' holder='1391' name='const_d8' return='1213' arguments='1220' flags='8' bytes='118' compile_id='10' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='41'/>
+<parse_done stamp='0.035'/>
+</parse>
+<loop_tree>
+<loop idx='200' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='200' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='200' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='200' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='200' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='276' nmethods='11' adapters='207' free_code_cache='49734400'/>
+<task_done success='1' nmsize='440' count='1' backedge_count='3072' stamp='0.036'/>
+</task>
+<task compile_id='12' method='ChaseBench runConst ()I' bytes='54' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.036'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runConst' return='1213' flags='8' bytes='54' iicount='1'/>
+<parse method='1392' uses='1.000000' stamp='0.036'>
+<bc code='162' bci='7'/>
+<branch target_bci='52' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='184' bci='14'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1391' name='const_d2' return='1213' arguments='1220' flags='8' bytes='26' compile_id='7' compiler='c2' iicount='1408'/>
+<call method='1394' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='14'/>
+<bc code='184' bci='23'/>
+<method id='1395' holder='1391' name='const_d3' return='1213' arguments='1220' flags='8' bytes='41' compile_id='8' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='23'/>
+<bc code='184' bci='32'/>
+<method id='1396' holder='1391' name='const_d5' return='1213' arguments='1220' flags='8' bytes='71' compile_id='9' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='32'/>
+<bc code='184' bci='41'/>
+<method id='1397' holder='1391' name='const_d8' return='1213' arguments='1220' flags='8' bytes='118' compile_id='10' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='41'/>
+<bc code='162' bci='7'/>
+<branch target_bci='52' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<parse_done stamp='0.036'/>
+</parse>
+<loop_tree>
+<loop idx='194' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='194' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='194' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='194' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='194' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='277' nmethods='12' adapters='207' free_code_cache='49733248'/>
+<task_done success='1' nmsize='392' count='1' backedge_count='3072' stamp='0.037'/>
+</task>
+<task compile_id='13' method='ChaseBench dyn_d2 (Ljava/lang/Object;II)I' bytes='22' count='1408' iicount='1408' blocking='1' stamp='0.038'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='dyn_d2' return='1213' arguments='1220 1213 1213' flags='8' bytes='22' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.038'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='7'/>
+<uncommon_trap bci='7' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='12'/>
+<uncommon_trap bci='12' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='12' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='20'/>
+<uncommon_trap bci='20' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.038'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='278' nmethods='13' adapters='207' free_code_cache='49731584'/>
+<task_done success='1' nmsize='312' count='1408' stamp='0.038'/>
+</task>
+<task compile_id='14' method='ChaseBench dyn_d3 (Ljava/lang/Object;III)I' bytes='37' count='1408' iicount='1408' blocking='1' stamp='0.039'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='dyn_d3' return='1213' arguments='1220 1213 1213 1213' flags='8' bytes='37' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.039'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='9'/>
+<uncommon_trap bci='9' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='22'/>
+<uncommon_trap bci='22' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='27'/>
+<uncommon_trap bci='27' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='27' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='35'/>
+<uncommon_trap bci='35' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.039'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='279' nmethods='14' adapters='207' free_code_cache='49730176'/>
+<task_done success='1' nmsize='456' count='1408' stamp='0.039'/>
+</task>
+<task compile_id='15' method='ChaseBench dyn_d5 (Ljava/lang/Object;IIIII)I' bytes='65' count='1408' iicount='1408' blocking='1' stamp='0.039'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='dyn_d5' return='1213' arguments='1220 1213 1213 1213 1213 1213' flags='8' bytes='65' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.039'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='9'/>
+<uncommon_trap bci='9' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='22'/>
+<uncommon_trap bci='22' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='27'/>
+<uncommon_trap bci='27' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='27' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='35'/>
+<uncommon_trap bci='35' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='40'/>
+<uncommon_trap bci='40' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='40' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='49'/>
+<uncommon_trap bci='49' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='54'/>
+<uncommon_trap bci='54' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='54' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='63'/>
+<uncommon_trap bci='63' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.040'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='280' nmethods='15' adapters='207' free_code_cache='49728128'/>
+<task_done success='1' nmsize='776' count='1408' stamp='0.040'/>
+</task>
+<task compile_id='16' method='ChaseBench dyn_d8 (Ljava/lang/Object;IIIIIIII)I' bytes='107' count='1408' iicount='1408' blocking='1' stamp='0.040'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='dyn_d8' return='1213' arguments='1220 1213 1213 1213 1213 1213 1213 1213 1213' flags='8' bytes='107' iicount='1408'/>
+<parse method='1392' uses='1408.000000' stamp='0.040'>
+<bc code='192' bci='1'/>
+<uncommon_trap bci='1' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='1' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='9'/>
+<uncommon_trap bci='9' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='14'/>
+<uncommon_trap bci='14' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='14' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='22'/>
+<uncommon_trap bci='22' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='27'/>
+<uncommon_trap bci='27' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='27' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='35'/>
+<uncommon_trap bci='35' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='40'/>
+<uncommon_trap bci='40' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='40' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='49'/>
+<uncommon_trap bci='49' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='54'/>
+<uncommon_trap bci='54' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='54' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='63'/>
+<uncommon_trap bci='63' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='68'/>
+<uncommon_trap bci='68' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='68' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='77'/>
+<uncommon_trap bci='77' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='82'/>
+<uncommon_trap bci='82' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='82' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='50' bci='91'/>
+<uncommon_trap bci='91' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='192' bci='96'/>
+<uncommon_trap bci='96' reason='null_check' action='make_not_entrant' debug_id='0'/>
+<uncommon_trap bci='96' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='46' bci='105'/>
+<uncommon_trap bci='105' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.041'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='281' nmethods='16' adapters='207' free_code_cache='49724928'/>
+<task_done success='1' nmsize='1152' count='1408' stamp='0.041'/>
+</task>
+<task compile_id='17' compile_kind='osr' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.042'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runDyn' return='1213' flags='8' bytes='148' iicount='1'/>
+<parse method='1392' uses='1.000000' osr_bci='4' stamp='0.042'>
+<uncommon_trap bci='4' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='162' bci='7'/>
+<branch target_bci='146' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='184' bci='82'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1391' name='dyn_d2' return='1213' arguments='1220 1213 1213' flags='8' bytes='22' compile_id='13' compiler='c2' iicount='1408'/>
+<call method='1394' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='82'/>
+<bc code='184' bci='95'/>
+<method id='1395' holder='1391' name='dyn_d3' return='1213' arguments='1220 1213 1213 1213' flags='8' bytes='37' compile_id='14' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='95'/>
+<bc code='184' bci='112'/>
+<method id='1396' holder='1391' name='dyn_d5' return='1213' arguments='1220 1213 1213 1213 1213 1213' flags='8' bytes='65' compile_id='15' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='112'/>
+<bc code='184' bci='135'/>
+<method id='1397' holder='1391' name='dyn_d8' return='1213' arguments='1220 1213 1213 1213 1213 1213 1213 1213 1213' flags='8' bytes='107' compile_id='16' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='135'/>
+<parse_done stamp='0.042'/>
+</parse>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='282' nmethods='17' adapters='207' free_code_cache='49723392'/>
+<task_done success='1' nmsize='672' count='1' backedge_count='3072' stamp='0.043'/>
+</task>
+<task compile_id='18' method='ChaseBench runDyn ()I' bytes='148' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.043'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runDyn' return='1213' flags='8' bytes='148' iicount='1'/>
+<parse method='1392' uses='1.000000' stamp='0.043'>
+<bc code='162' bci='7'/>
+<branch target_bci='146' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='184' bci='82'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1391' name='dyn_d2' return='1213' arguments='1220 1213 1213' flags='8' bytes='22' compile_id='13' compiler='c2' iicount='1408'/>
+<call method='1394' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='82'/>
+<bc code='184' bci='95'/>
+<method id='1395' holder='1391' name='dyn_d3' return='1213' arguments='1220 1213 1213 1213' flags='8' bytes='37' compile_id='14' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='95'/>
+<bc code='184' bci='112'/>
+<method id='1396' holder='1391' name='dyn_d5' return='1213' arguments='1220 1213 1213 1213 1213 1213' flags='8' bytes='65' compile_id='15' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='112'/>
+<bc code='184' bci='135'/>
+<method id='1397' holder='1391' name='dyn_d8' return='1213' arguments='1220 1213 1213 1213 1213 1213 1213 1213 1213' flags='8' bytes='107' compile_id='16' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='135'/>
+<bc code='162' bci='7'/>
+<branch target_bci='146' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<parse_done stamp='0.043'/>
+</parse>
+<loop_tree>
+<loop idx='217' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='283' nmethods='18' adapters='207' free_code_cache='49721856'/>
+<task_done success='1' nmsize='648' count='1' backedge_count='3072' stamp='0.044'/>
+</task>
+<task compile_id='19' method='ChaseBench checks_d2 (Ljava/lang/Object;II)I' bytes='115' count='1408' iicount='1408' blocking='1' stamp='0.045'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='checks_d2' return='1213' arguments='1220 1213 1213' flags='8' bytes='115' iicount='1408'/>
+<klass id='1395' name='java.lang.ArrayIndexOutOfBoundsException' flags='1'/>
+<uncommon_trap method='1392' bci='42' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='102' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<klass id='1241' name='java.lang.ClassCastException' flags='1'/>
+<uncommon_trap method='1392' bci='76' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<klass id='1387' name='java.lang.NullPointerException' flags='1'/>
+<uncommon_trap method='1392' bci='60' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<parse method='1392' uses='1408.000000' stamp='0.045'>
+<bc code='199' bci='1'/>
+<branch target_bci='12' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='1' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='13'/>
+<uncommon_trap bci='13' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='16'/>
+<branch target_bci='27' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='33'/>
+<branch target_bci='42' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='33' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='39'/>
+<branch target_bci='50' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='39' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='52'/>
+<uncommon_trap bci='52' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='57'/>
+<branch target_bci='68' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='57' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='70'/>
+<uncommon_trap bci='70' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='73'/>
+<branch target_bci='84' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='92'/>
+<branch target_bci='102' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='92' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='99'/>
+<branch target_bci='110' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='99' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='46' bci='113'/>
+<uncommon_trap bci='113' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.045'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='284' nmethods='19' adapters='207' free_code_cache='49720448'/>
+<task_done success='1' nmsize='312' count='1408' stamp='0.046'/>
+</task>
+<task compile_id='20' method='ChaseBench checks_d3 (Ljava/lang/Object;III)I' bytes='179' count='1408' iicount='1408' blocking='1' stamp='0.046'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='checks_d3' return='1213' arguments='1220 1213 1213 1213' flags='8' bytes='179' iicount='1408'/>
+<klass id='1395' name='java.lang.ArrayIndexOutOfBoundsException' flags='1'/>
+<uncommon_trap method='1392' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<klass id='1241' name='java.lang.ClassCastException' flags='1'/>
+<uncommon_trap method='1392' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<klass id='1387' name='java.lang.NullPointerException' flags='1'/>
+<uncommon_trap method='1392' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<parse method='1392' uses='1408.000000' stamp='0.046'>
+<bc code='199' bci='1'/>
+<branch target_bci='12' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='1' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='13'/>
+<uncommon_trap bci='13' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='16'/>
+<branch target_bci='27' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='34'/>
+<branch target_bci='44' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='34' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='41'/>
+<branch target_bci='52' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='41' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='55'/>
+<uncommon_trap bci='55' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='60'/>
+<branch target_bci='71' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='60' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='73'/>
+<uncommon_trap bci='73' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='76'/>
+<branch target_bci='87' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='95'/>
+<branch target_bci='105' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='95' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='102'/>
+<branch target_bci='113' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='102' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='116'/>
+<uncommon_trap bci='116' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='121'/>
+<branch target_bci='132' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='121' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='134'/>
+<uncommon_trap bci='134' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='137'/>
+<branch target_bci='148' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='156'/>
+<branch target_bci='166' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='156' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='163'/>
+<branch target_bci='174' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='163' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='46' bci='177'/>
+<uncommon_trap bci='177' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.046'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='285' nmethods='20' adapters='207' free_code_cache='49719040'/>
+<task_done success='1' nmsize='448' count='1408' stamp='0.047'/>
+</task>
+<task compile_id='21' method='ChaseBench checks_d5 (Ljava/lang/Object;IIIII)I' bytes='307' count='1408' iicount='1408' blocking='1' stamp='0.047'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='checks_d5' return='1213' arguments='1220 1213 1213 1213 1213 1213' flags='8' bytes='307' iicount='1408'/>
+<klass id='1395' name='java.lang.ArrayIndexOutOfBoundsException' flags='1'/>
+<uncommon_trap method='1392' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='229' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='293' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<klass id='1241' name='java.lang.ClassCastException' flags='1'/>
+<uncommon_trap method='1392' bci='265' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<klass id='1387' name='java.lang.NullPointerException' flags='1'/>
+<uncommon_trap method='1392' bci='249' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='201' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='185' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<parse method='1392' uses='1408.000000' stamp='0.047'>
+<bc code='199' bci='1'/>
+<branch target_bci='12' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='1' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='13'/>
+<uncommon_trap bci='13' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='16'/>
+<branch target_bci='27' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='34'/>
+<branch target_bci='44' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='34' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='41'/>
+<branch target_bci='52' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='41' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='55'/>
+<uncommon_trap bci='55' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='60'/>
+<branch target_bci='71' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='60' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='73'/>
+<uncommon_trap bci='73' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='76'/>
+<branch target_bci='87' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='95'/>
+<branch target_bci='105' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='95' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='102'/>
+<branch target_bci='113' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='102' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='116'/>
+<uncommon_trap bci='116' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='121'/>
+<branch target_bci='132' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='121' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='134'/>
+<uncommon_trap bci='134' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='137'/>
+<branch target_bci='148' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='156'/>
+<branch target_bci='166' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='156' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='163'/>
+<branch target_bci='174' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='163' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='177'/>
+<uncommon_trap bci='177' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='182'/>
+<branch target_bci='193' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='182' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='195'/>
+<uncommon_trap bci='195' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='198'/>
+<branch target_bci='209' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='218'/>
+<branch target_bci='229' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='218' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='226'/>
+<branch target_bci='237' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='226' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='241'/>
+<uncommon_trap bci='241' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='246'/>
+<branch target_bci='257' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='246' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='259'/>
+<uncommon_trap bci='259' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='262'/>
+<branch target_bci='273' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='282'/>
+<branch target_bci='293' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='282' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='290'/>
+<branch target_bci='301' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='290' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='46' bci='305'/>
+<uncommon_trap bci='305' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.047'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='286' nmethods='21' adapters='207' free_code_cache='49716992'/>
+<task_done success='1' nmsize='728' count='1408' stamp='0.048'/>
+</task>
+<task compile_id='22' method='ChaseBench checks_d8 (Ljava/lang/Object;IIIIIIII)I' bytes='499' count='1408' iicount='1408' blocking='1' stamp='0.048'>
+<type id='1213' name='int'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='checks_d8' return='1213' arguments='1220 1213 1213 1213 1213 1213 1213 1213 1213' flags='8' bytes='499' iicount='1408'/>
+<klass id='1395' name='java.lang.ArrayIndexOutOfBoundsException' flags='1'/>
+<uncommon_trap method='1392' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='229' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='293' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='357' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='421' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<uncommon_trap method='1392' bci='485' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1395'/>
+<klass id='1241' name='java.lang.ClassCastException' flags='1'/>
+<uncommon_trap method='1392' bci='457' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<klass id='1387' name='java.lang.NullPointerException' flags='1'/>
+<uncommon_trap method='1392' bci='441' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='393' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='377' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='329' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='313' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='265' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='249' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='201' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='185' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1392' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1392' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<parse method='1392' uses='1408.000000' stamp='0.048'>
+<bc code='199' bci='1'/>
+<branch target_bci='12' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='1' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='13'/>
+<uncommon_trap bci='13' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='16'/>
+<branch target_bci='27' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='34'/>
+<branch target_bci='44' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='34' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='41'/>
+<branch target_bci='52' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='41' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='55'/>
+<uncommon_trap bci='55' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='60'/>
+<branch target_bci='71' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='60' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='73'/>
+<uncommon_trap bci='73' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='76'/>
+<branch target_bci='87' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='95'/>
+<branch target_bci='105' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='95' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='102'/>
+<branch target_bci='113' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='102' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='116'/>
+<uncommon_trap bci='116' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='121'/>
+<branch target_bci='132' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='121' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='134'/>
+<uncommon_trap bci='134' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='137'/>
+<branch target_bci='148' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='156'/>
+<branch target_bci='166' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='156' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='163'/>
+<branch target_bci='174' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='163' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='177'/>
+<uncommon_trap bci='177' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='182'/>
+<branch target_bci='193' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='182' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='195'/>
+<uncommon_trap bci='195' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='198'/>
+<branch target_bci='209' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='218'/>
+<branch target_bci='229' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='218' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='226'/>
+<branch target_bci='237' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='226' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='241'/>
+<uncommon_trap bci='241' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='246'/>
+<branch target_bci='257' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='246' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='259'/>
+<uncommon_trap bci='259' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='262'/>
+<branch target_bci='273' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='282'/>
+<branch target_bci='293' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='282' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='290'/>
+<branch target_bci='301' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='290' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='305'/>
+<uncommon_trap bci='305' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='310'/>
+<branch target_bci='321' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='310' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='323'/>
+<uncommon_trap bci='323' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='326'/>
+<branch target_bci='337' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='346'/>
+<branch target_bci='357' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='346' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='354'/>
+<branch target_bci='365' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='354' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='369'/>
+<uncommon_trap bci='369' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='374'/>
+<branch target_bci='385' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='374' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='387'/>
+<uncommon_trap bci='387' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='390'/>
+<branch target_bci='401' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='410'/>
+<branch target_bci='421' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='410' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='418'/>
+<branch target_bci='429' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='418' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='50' bci='433'/>
+<uncommon_trap bci='433' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<bc code='199' bci='438'/>
+<branch target_bci='449' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='438' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='193' bci='451'/>
+<uncommon_trap bci='451' reason='class_check' action='maybe_recompile' debug_id='0'/>
+<bc code='154' bci='454'/>
+<branch target_bci='465' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<bc code='155' bci='474'/>
+<branch target_bci='485' taken='0' not_taken='1408' cnt='1408.000000' prob='never'/>
+<uncommon_trap bci='474' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='161' bci='482'/>
+<branch target_bci='493' taken='1408' not_taken='0' cnt='1408.000000' prob='always'/>
+<uncommon_trap bci='482' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken always'/>
+<bc code='46' bci='497'/>
+<uncommon_trap bci='497' reason='range_check' action='make_not_entrant' debug_id='0' comment='range_check'/>
+<parse_done stamp='0.048'/>
+</parse>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='287' nmethods='22' adapters='207' free_code_cache='49713792'/>
+<task_done success='1' nmsize='1064' count='1408' stamp='0.049'/>
+</task>
+<task compile_id='23' compile_kind='osr' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1' osr_bci='4' blocking='1' stamp='0.050'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runChecks' return='1213' flags='8' bytes='148' iicount='1'/>
+<parse method='1392' uses='1.000000' osr_bci='4' stamp='0.050'>
+<uncommon_trap bci='4' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='4' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='162' bci='7'/>
+<branch target_bci='146' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<bc code='184' bci='82'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1391' name='checks_d2' return='1213' arguments='1220 1213 1213' flags='8' bytes='115' compile_id='19' compiler='c2' iicount='1408'/>
+<call method='1394' count='2048' prof_factor='1.000000' inline='1'/>
+<klass id='1400' name='java.lang.ArrayIndexOutOfBoundsException' flags='1'/>
+<uncommon_trap method='1394' bci='42' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1394' bci='102' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<klass id='1241' name='java.lang.ClassCastException' flags='1'/>
+<uncommon_trap method='1394' bci='76' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<klass id='1387' name='java.lang.NullPointerException' flags='1'/>
+<uncommon_trap method='1394' bci='60' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1394' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1394' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='82'/>
+<bc code='184' bci='95'/>
+<method id='1395' holder='1391' name='checks_d3' return='1213' arguments='1220 1213 1213 1213' flags='8' bytes='179' compile_id='20' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<uncommon_trap method='1395' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1395' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1395' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1395' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1395' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1395' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1395' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1395' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1395' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='95'/>
+<bc code='184' bci='112'/>
+<method id='1396' holder='1391' name='checks_d5' return='1213' arguments='1220 1213 1213 1213 1213 1213' flags='8' bytes='307' compile_id='21' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<uncommon_trap method='1396' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='229' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='293' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='265' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='249' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='201' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='185' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='112'/>
+<bc code='184' bci='135'/>
+<method id='1397' holder='1391' name='checks_d8' return='1213' arguments='1220 1213 1213 1213 1213 1213 1213 1213 1213' flags='8' bytes='499' compile_id='22' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<uncommon_trap method='1397' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='229' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='293' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='357' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='421' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='485' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='457' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='441' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='393' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='377' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='329' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='313' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='265' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='249' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='201' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='185' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='hot method too big'/>
+<direct_call bci='135'/>
+<parse_done stamp='0.050'/>
+</parse>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='224' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='288' nmethods='23' adapters='207' free_code_cache='49712256'/>
+<task_done success='1' nmsize='672' count='1' backedge_count='3072' stamp='0.051'/>
+</task>
+<task compile_id='24' method='ChaseBench runChecks ()I' bytes='148' count='1' backedge_count='3072' iicount='1' blocking='1' stamp='0.051'>
+<type id='1213' name='int'/>
+<klass id='1391' name='ChaseBench' flags='1'/>
+<method id='1392' holder='1391' name='runChecks' return='1213' flags='8' bytes='148' iicount='1'/>
+<parse method='1392' uses='1.000000' stamp='0.051'>
+<bc code='162' bci='7'/>
+<branch target_bci='146' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='7' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='184' bci='82'/>
+<klass id='1220' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1391' name='checks_d2' return='1213' arguments='1220 1213 1213' flags='8' bytes='115' compile_id='19' compiler='c2' iicount='1408'/>
+<call method='1394' count='2048' prof_factor='1.000000' inline='1'/>
+<klass id='1400' name='java.lang.ArrayIndexOutOfBoundsException' flags='1'/>
+<uncommon_trap method='1394' bci='42' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1394' bci='102' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<klass id='1241' name='java.lang.ClassCastException' flags='1'/>
+<uncommon_trap method='1394' bci='76' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<klass id='1387' name='java.lang.NullPointerException' flags='1'/>
+<uncommon_trap method='1394' bci='60' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1394' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1394' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='82'/>
+<bc code='184' bci='95'/>
+<method id='1395' holder='1391' name='checks_d3' return='1213' arguments='1220 1213 1213 1213' flags='8' bytes='179' compile_id='20' compiler='c2' iicount='1408'/>
+<call method='1395' count='2048' prof_factor='1.000000' inline='1'/>
+<uncommon_trap method='1395' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1395' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1395' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1395' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1395' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1395' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1395' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1395' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1395' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='95'/>
+<bc code='184' bci='112'/>
+<method id='1396' holder='1391' name='checks_d5' return='1213' arguments='1220 1213 1213 1213 1213 1213' flags='8' bytes='307' compile_id='21' compiler='c2' iicount='1408'/>
+<call method='1396' count='2048' prof_factor='1.000000' inline='1'/>
+<uncommon_trap method='1396' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='229' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='293' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1396' bci='265' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='249' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='201' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='185' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1396' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1396' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='disallowed by CompileCommand'/>
+<direct_call bci='112'/>
+<bc code='184' bci='135'/>
+<method id='1397' holder='1391' name='checks_d8' return='1213' arguments='1220 1213 1213 1213 1213 1213 1213 1213 1213' flags='8' bytes='499' compile_id='22' compiler='c2' iicount='1408'/>
+<call method='1397' count='2048' prof_factor='1.000000' inline='1'/>
+<uncommon_trap method='1397' bci='44' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='105' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='166' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='229' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='293' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='357' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='421' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='485' reason='unloaded' action='reinterpret' index='57' debug_id='0' klass='1400'/>
+<uncommon_trap method='1397' bci='457' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='441' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='393' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='377' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='329' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='313' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='265' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='249' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='201' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='185' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='140' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='124' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='79' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='63' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<uncommon_trap method='1397' bci='19' reason='unloaded' action='reinterpret' index='54' debug_id='0' klass='1241'/>
+<uncommon_trap method='1397' bci='4' reason='unloaded' action='reinterpret' index='51' debug_id='0' klass='1387'/>
+<inline_fail reason='hot method too big'/>
+<direct_call bci='135'/>
+<bc code='162' bci='7'/>
+<branch target_bci='146' taken='0' not_taken='2048' cnt='2048.000000' prob='never'/>
+<uncommon_trap bci='7' reason='unstable_if' action='reinterpret' debug_id='0' comment='taken never'/>
+<parse_done stamp='0.051'/>
+</parse>
+<loop_tree>
+<loop idx='217' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='217' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='0' success='1'/>
+<code_cache total_blobs='289' nmethods='24' adapters='207' free_code_cache='49710720'/>
+<task_done success='1' nmsize='648' count='1' backedge_count='3072' stamp='0.052'/>
+</task>
+</compilation_log>
+<hotspot_log_done stamp='0.056'/>
+</hotspot_log>

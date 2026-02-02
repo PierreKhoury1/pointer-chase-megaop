@@ -1,0 +1,11 @@
+\frametitle{Code Example: Benchmark Harness (C)}
+\begin{verbatim}
+static volatile int sink;
+for (int i = 0; i < ITERS; i++) {
+    acc ^= chase_naive(head, depth);
+}
+for (int i = 0; i < ITERS; i++) {
+    acc ^= chase_atomic(head, depth);
+}
+sink = acc;
+  \end{verbatim}

@@ -1,0 +1,286 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{dolphin}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\graphicspath{{../build/graphs/}{../build/graphs/combined_graphs/}{../build/graphs/aot_vs_hotspot_graphs/}{../atomic_chase/graphs_callgrind/}}
+
+\title{Pointer Chasing as a Semantic Mega-Instruction}
+\subtitle{AOT + HotSpot Evidence and the Atomic Chase Prototype}
+\author{Pointer-Chase Study}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Agenda}
+  \begin{enumerate}
+    \item Motivation and hypothesis
+    \item AOT evidence (GCC/Clang)
+    \item HotSpot evidence (JVM)
+    \item Combined view
+    \item Atomic chase prototype
+    \item Status and next steps
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Motivation}
+  Pointer chasing forces a serial dependency chain:
+  \[
+    p_{i+1} = *\left(p_i + \Delta_i\right), \quad i = 0..(d-1)
+  \]
+  This typically expands to:
+  \[
+    \mathcal{O}(d)\ \text{loads} + \mathcal{O}(d)\ \text{guards} + \mathcal{O}(d)\ \text{control-flow}
+  \]
+  Goal: justify representing the entire chase as a single semantic unit.
+\end{frame}
+
+\begin{frame}{Why This Approach?}
+  \begin{itemize}
+    \item We need structural evidence, not only timing results.
+    \item AOT shows what compilers emit; JIT shows guards and deopts.
+    \item If both retain \(\mathcal{O}(d)\) structure, a single semantic unit is justified.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{AOT Experimental Matrix}
+  \textbf{Depths:} 2, 3, 5, 8 \\
+  \textbf{Variants:}
+  \begin{itemize}
+    \item Plain dereference: \texttt{**p, ***p, ...}
+    \item Constant offsets: \texttt{*(p + c1) -> *(... + c2) -> ...}
+    \item Dynamic offsets: offsets passed as arguments
+    \item Explicit checks: per-level guard calls
+  \end{itemize}
+  \vspace{0.3em}
+  \textbf{Metrics:} loads, branches, basic blocks, total instructions.
+\end{frame}
+
+\begin{frame}{AOT Snapshot (GCC -O2)}
+  \centering
+  \small
+  \input{tables/aot_gcc_o2}
+  \vspace{0.5em}
+  \begin{itemize}
+    \item Loads scale with depth for all patterns.
+    \item Branches appear primarily with explicit checks.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{AOT Results: Combined (All Compilers)}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{combined_loads.png}
+      \vspace{0.3em}
+      \includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{combined_branches.png}
+    \column{0.5\textwidth}
+      \includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{combined_basic_blocks.png}
+      \vspace{0.3em}
+      \includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{combined_instructions.png}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{AOT Takeaways}
+  \begin{itemize}
+    \item Loads scale linearly with depth across compilers and optimizations.
+    \item Explicit checks induce \(\mathcal{O}(d)\) branches and basic blocks.
+    \item Optimization shrinks constants, but \(\mathcal{O}(d)\) scaling remains.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{HotSpot (JVM) Measurement}
+  We extended the same matrix to HotSpot and extracted:
+  \[
+    \text{deref ops},\; \text{guards (uncommon\_trap)},\; \text{deopts},\; \text{IR proxy counts}
+  \]
+  Note: Product JVMs do not expose C2 IR nodes. We use bytecode parse
+  statistics as proxies and log all \texttt{uncommon\_trap} entries.
+\end{frame}
+
+\begin{frame}{HotSpot Snapshot (Proxies)}
+  \centering
+  \small
+  \input{tables/hotspot_summary}
+  \vspace{0.5em}
+  \begin{itemize}
+    \item Deref ops scale with depth.
+    \item Guards scale roughly with depth, mirroring AOT.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{AOT vs HotSpot: Loads / Deref Ops}
+  \begin{center}
+    \includegraphics[width=0.9\linewidth,height=0.7\textheight,keepaspectratio]{aot_vs_hotspot_loads.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{AOT vs HotSpot: Branches / Guards}
+  \begin{center}
+    \includegraphics[width=0.9\linewidth,height=0.7\textheight,keepaspectratio]{aot_vs_hotspot_branches.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{AOT vs HotSpot: Instructions / IR Proxy}
+  \begin{center}
+    \includegraphics[width=0.9\linewidth,height=0.7\textheight,keepaspectratio]{aot_vs_hotspot_instructions.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{HotSpot Takeaways}
+  \begin{itemize}
+    \item Deref operations scale linearly with depth.
+    \item Guards and deopt points also scale roughly \(\mathcal{O}(d)\).
+    \item This mirrors the AOT structure and motivates a single semantic unit.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Atomic Chase: Semantic Mega-Instruction Model}
+  \textbf{Naive (current practice):}
+  \begin{verbatim}
+for (i = 0; i < depth; i++) {
+    p = p->next;
+}
+return p->value;
+  \end{verbatim}
+  \textbf{Atomic (mega-instruction model):}
+  \begin{verbatim}
+if (!p || !p->next || ... ) return -1;
+Node *q = p->next->next->...;
+return q->value;
+  \end{verbatim}
+  Checks are upfront; dataflow is straight-line with a single return.
+\end{frame}
+
+\begin{frame}[fragile]{Code Example: Naive Chase (C)}
+  \begin{verbatim}
+int chase_naive(Node *p, int depth) {
+    for (int i = 0; i < depth; i++) {
+        p = p->next;
+    }
+    return p->value;
+}
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Code Example: Atomic Chase (C)}
+  \begin{verbatim}
+int chase_atomic(Node *p, int depth) {
+    if (!p || !p->next || !p->next->next) return -1;
+    Node *q = p->next->next;
+    return q->value;
+}
+  \end{verbatim}
+  (Actual implementation is unrolled for depths 2,3,5,8.)
+\end{frame}
+
+\begin{frame}[fragile]{Code Example: Atomic Chase (Switch Excerpt)}
+  \begin{verbatim}
+switch (depth) {
+  case 5:
+    if (p && p->next && p->next->next &&
+        p->next->next->next &&
+        p->next->next->next->next &&
+        p->next->next->next->next->next) {
+      result = p->next->next->next->next->next->value;
+    }
+    break;
+}
+  \end{verbatim}
+  This models upfront checks + straight-line dataflow per depth.
+\end{frame}
+
+\begin{frame}[fragile]{Code Example: Benchmark Harness (C)}
+  \begin{verbatim}
+static volatile int sink;
+for (int i = 0; i < ITERS; i++) {
+    acc ^= chase_naive(head, depth);
+}
+for (int i = 0; i < ITERS; i++) {
+    acc ^= chase_atomic(head, depth);
+}
+sink = acc;
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}{Why Atomic Chase Now?}
+  \begin{itemize}
+    \item The AOT/JIT evidence shows persistent \(\mathcal{O}(d)\) structure.
+    \item Atomic chase isolates the effect of control-flow collapse.
+    \item We avoid changing algorithms to keep comparisons honest.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Atomic Chase Benchmark Harness}
+  \begin{itemize}
+    \item Depths: 2, 3, 5, 8
+    \item Tight loops (\(\ge 10^7\) iters), identical inputs
+    \item Metrics via \texttt{perf stat}:
+      \(\text{instructions, cycles, branches, branch-misses}\)
+  \end{itemize}
+  Note: hardware counters are unavailable in WSL; perf runs must be done
+  on a native Linux machine.
+\end{frame}
+
+\begin{frame}{Callgrind (WSL-safe) Results}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \includegraphics[width=\linewidth,height=0.33\textheight,keepaspectratio]{callgrind_Ir.png}
+      \vspace{0.3em}
+      \includegraphics[width=\linewidth,height=0.33\textheight,keepaspectratio]{callgrind_Bc.png}
+    \column{0.5\textwidth}
+      \begin{itemize}
+        \item Ir = dynamic instruction refs (simulated)
+        \item Bc = conditional branches executed
+        \item Atomic has \emph{more} branches due to explicit null checks
+      \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Callgrind: Branch Mispredicts}
+  \begin{center}
+    \includegraphics[width=0.85\linewidth,height=0.7\textheight,keepaspectratio]{callgrind_Bcm.png}
+  \end{center}
+  Mispredicts are low and nearly flat; branches are predictable in this synthetic setup.
+\end{frame}
+
+\begin{frame}{Current Direction}
+  \begin{enumerate}
+    \item Run perf on native Linux for atomic vs naive.
+    \item Prioritize branches and branch-misses as the primary signal.
+    \item If the structure collapses, formalize the semantic contract.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Status}
+  \begin{itemize}
+    \item \textbf{Done:} AOT tables + graphs (GCC/Clang, -O0/-O2)
+    \item \textbf{Done:} HotSpot tables + graphs (bytecode/guard proxies)
+    \item \textbf{Done:} Atomic chase code + benchmark harness
+    \item \textbf{Done:} Callgrind (WSL-safe) branch/instruction estimates
+    \item \textbf{Pending:} Native Linux perf run + hardware counters
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Next Steps}
+  \begin{enumerate}
+    \item Run perf on native Linux (collect \texttt{instructions}, \texttt{branches}, \texttt{branch-misses})
+    \item Produce atomic-vs-naive graphs and summary table
+    \item (Optional) Use fastdebug JVM to extract real C2 IR node counts
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Conclusion}
+  The data show a persistent \(\mathcal{O}(d)\) structural cost in both
+  AOT and JIT pipelines. The atomic chase model provides a concrete
+  semantic target for collapsing this structure into a single unit.
+\end{frame}
+
+\end{document}
