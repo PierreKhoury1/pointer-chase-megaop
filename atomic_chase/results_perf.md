@@ -1,0 +1,23 @@
+## Atomic chase perf (per depth)
+
+- perf binary: `/home/pk345/WSL2-Linux-Kernel/tools/perf/perf`
+- event profile: `software_fallback`
+
+| event_profile | opt | mode | depth | task-clock | context-switches | cpu-migrations | page-faults |
+|---|---|---|---:|---:|---:|---:|---:|
+| software_fallback | O2 | naive | 2 | 6.03 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O2 | naive | 3 | 7.64 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O2 | naive | 5 | 8.83 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O2 | naive | 8 | 13.04 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O2 | atomic | 2 | 8.74 | 0.0 | 0.0 | 54.0 |
+| software_fallback | O2 | atomic | 3 | 11.08 | 0.0 | 0.0 | 52.0 |
+| software_fallback | O2 | atomic | 5 | 9.81 | 0.0 | 0.0 | 52.0 |
+| software_fallback | O2 | atomic | 8 | 15.39 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O3 | naive | 2 | 6.0 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O3 | naive | 3 | 7.69 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O3 | naive | 5 | 8.81 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O3 | naive | 8 | 13.08 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O3 | atomic | 2 | 8.84 | 0.0 | 0.0 | 52.0 |
+| software_fallback | O3 | atomic | 3 | 11.04 | 0.0 | 0.0 | 54.0 |
+| software_fallback | O3 | atomic | 5 | 9.78 | 0.0 | 0.0 | 53.0 |
+| software_fallback | O3 | atomic | 8 | 15.12 | 0.0 | 0.0 | 53.0 |

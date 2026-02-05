@@ -1,0 +1,17 @@
+workload,method_or_site,pattern,depth,deref_ops,guard_count,deopt_count,ir_proxy_size,site_stability,source
+ChaseBench,plain_d2,plain,2,2,2,2,2,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,plain_d3,plain,3,3,3,3,3,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,plain_d5,plain,5,5,5,5,5,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,plain_d8,plain,8,8,8,8,8,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,const_d2,const,2,4,6,6,6,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,const_d3,const,3,6,9,9,9,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,const_d5,const,5,10,15,15,15,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,const_d8,const,8,16,24,24,24,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,dyn_d2,dyn,2,2,6,6,4,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,dyn_d3,dyn,3,3,9,9,6,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,dyn_d5,dyn,5,5,15,15,10,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,dyn_d8,dyn,8,8,24,24,16,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,checks_d2,checks,2,2,4,16,12,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,checks_d3,checks,3,3,6,24,18,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,checks_d5,checks,5,5,10,40,30,single-run,build/hotspot/results_hotspot.csv
+ChaseBench,checks_d8,checks,8,8,16,64,48,single-run,build/hotspot/results_hotspot.csv

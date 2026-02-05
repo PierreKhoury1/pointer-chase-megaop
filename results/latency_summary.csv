@@ -1,0 +1,17 @@
+tool,opt,mode,depth,instructions_proxy,branches_proxy,branch_misses_proxy,cpi,llc_misses,backend_stalls,mlp_proxy,source
+callgrind,O2,naive,2,190133214,40025130,3304,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,naive,3,240133419,50025164,3304,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,naive,5,290133829,60025232,3305,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,naive,8,340134444,70025334,3313,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,atomic,2,220133214,70025130,3302,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,atomic,3,270133419,90025164,3306,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,atomic,5,280133829,80025232,3306,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O2,atomic,8,400134444,130025334,3308,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,naive,2,190133213,40025130,3304,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,naive,3,240133418,50025164,3304,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,naive,5,290133828,60025232,3305,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,naive,8,340134443,70025334,3313,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,atomic,2,220133213,70025130,3301,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,atomic,3,270133418,90025164,3305,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,atomic,5,280133828,80025232,3305,na,na,na,na,atomic_chase/results_callgrind.csv
+callgrind,O3,atomic,8,400134443,130025334,3307,na,na,na,na,atomic_chase/results_callgrind.csv

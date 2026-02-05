@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-02-05T14:33:09Z",
+  "wsl_uname": "Linux CS31B025302 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+  "cpu_model": "12th Gen Intel(R) Core(TM) i9-12900",
+  "cpu_cores_logical": "24",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "governor": "",
+  "perf_available": false,
+  "gcc_available": true,
+  "clang_available": true,
+  "java_available": true,
+  "javac_available": true,
+  "valgrind_available": true,
+  "python3": "Python 3.12.3"
+}
