@@ -1,0 +1,62 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='450.0' y='20' text-anchor='middle' font-family='sans-serif' font-size='16'>Cycles/Iter vs Working Set (avg across depths)</text>
+<line x1='70' y1='450' x2='870' y2='450' stroke='#333'/>
+<line x1='70' y1='450' x2='70' y2='30' stroke='#333'/>
+<line x1='70.0' y1='450' x2='70.0' y2='456' stroke='#333'/>
+<text x='70.0' y='472' text-anchor='middle' font-family='sans-serif' font-size='12'>L1</text>
+<line x1='336.6666666666667' y1='450' x2='336.6666666666667' y2='456' stroke='#333'/>
+<text x='336.6666666666667' y='472' text-anchor='middle' font-family='sans-serif' font-size='12'>L2</text>
+<line x1='603.3333333333334' y1='450' x2='603.3333333333334' y2='456' stroke='#333'/>
+<text x='603.3333333333334' y='472' text-anchor='middle' font-family='sans-serif' font-size='12'>L3</text>
+<line x1='870.0' y1='450' x2='870.0' y2='456' stroke='#333'/>
+<text x='870.0' y='472' text-anchor='middle' font-family='sans-serif' font-size='12'>DRAM</text>
+<line x1='64' y1='450.0' x2='70' y2='450.0' stroke='#333'/>
+<text x='60' y='454.0' text-anchor='end' font-family='sans-serif' font-size='12'>-136.6</text>
+<line x1='70' y1='450.0' x2='870' y2='450.0' stroke='#ddd'/>
+<line x1='64' y1='366.0' x2='70' y2='366.0' stroke='#333'/>
+<text x='60' y='370.0' text-anchor='end' font-family='sans-serif' font-size='12'>218.6</text>
+<line x1='70' y1='366.0' x2='870' y2='366.0' stroke='#ddd'/>
+<line x1='64' y1='282.0' x2='70' y2='282.0' stroke='#333'/>
+<text x='60' y='286.0' text-anchor='end' font-family='sans-serif' font-size='12'>573.8</text>
+<line x1='70' y1='282.0' x2='870' y2='282.0' stroke='#ddd'/>
+<line x1='64' y1='198.0' x2='70' y2='198.0' stroke='#333'/>
+<text x='60' y='202.0' text-anchor='end' font-family='sans-serif' font-size='12'>929.0</text>
+<line x1='70' y1='198.0' x2='870' y2='198.0' stroke='#ddd'/>
+<line x1='64' y1='113.99999999999997' x2='70' y2='113.99999999999997' stroke='#333'/>
+<text x='60' y='117.99999999999997' text-anchor='end' font-family='sans-serif' font-size='12'>1284.2</text>
+<line x1='70' y1='113.99999999999997' x2='870' y2='113.99999999999997' stroke='#ddd'/>
+<line x1='64' y1='30.0' x2='70' y2='30.0' stroke='#333'/>
+<text x='60' y='34.0' text-anchor='end' font-family='sans-serif' font-size='12'>1639.4</text>
+<line x1='70' y1='30.0' x2='870' y2='30.0' stroke='#ddd'/>
+<text x='450.0' y='500' text-anchor='middle' font-family='sans-serif' font-size='13'>working set</text>
+<text x='18' y='260.0' text-anchor='middle' font-family='sans-serif' font-size='13' transform='rotate(-90 18 260.0)'>cycles/iter</text>
+<path d='M 70.0 413.5 L 336.7 410.2 L 603.3 373.3 L 870.0 126.8' fill='none' stroke='#1f77b4' stroke-width='2' />
+<circle cx='70.0' cy='413.5' r='3' fill='#1f77b4'/>
+<circle cx='336.7' cy='410.2' r='3' fill='#1f77b4'/>
+<circle cx='603.3' cy='373.3' r='3' fill='#1f77b4'/>
+<circle cx='870.0' cy='126.8' r='3' fill='#1f77b4'/>
+<path d='M 70.0 414.7 L 336.7 411.4 L 603.3 380.1 L 870.0 89.3' fill='none' stroke='#1f77b4' stroke-width='2' stroke-dasharray='6 4'/>
+<circle cx='70.0' cy='414.7' r='3' fill='#1f77b4'/>
+<circle cx='336.7' cy='411.4' r='3' fill='#1f77b4'/>
+<circle cx='603.3' cy='380.1' r='3' fill='#1f77b4'/>
+<circle cx='870.0' cy='89.3' r='3' fill='#1f77b4'/>
+<path d='M 70.0 413.2 L 336.7 407.6 L 603.3 366.1 L 870.0 65.0' fill='none' stroke='#d62728' stroke-width='2' />
+<circle cx='70.0' cy='413.2' r='3' fill='#d62728'/>
+<circle cx='336.7' cy='407.6' r='3' fill='#d62728'/>
+<circle cx='603.3' cy='366.1' r='3' fill='#d62728'/>
+<circle cx='870.0' cy='65.0' r='3' fill='#d62728'/>
+<path d='M 70.0 415.0 L 336.7 410.5 L 603.3 375.1 L 870.0 110.9' fill='none' stroke='#d62728' stroke-width='2' stroke-dasharray='6 4'/>
+<circle cx='70.0' cy='415.0' r='3' fill='#d62728'/>
+<circle cx='336.7' cy='410.5' r='3' fill='#d62728'/>
+<circle cx='603.3' cy='375.1' r='3' fill='#d62728'/>
+<circle cx='870.0' cy='110.9' r='3' fill='#d62728'/>
+<line x1='80' y1='36' x2='96' y2='36' stroke='#1f77b4' stroke-width='2' />
+<text x='102' y='40' font-family='sans-serif' font-size='12'>O2 guarded</text>
+<line x1='80' y1='54' x2='96' y2='54' stroke='#1f77b4' stroke-width='2' stroke-dasharray='6 4'/>
+<text x='102' y='58' font-family='sans-serif' font-size='12'>O2 contract</text>
+<line x1='80' y1='72' x2='96' y2='72' stroke='#d62728' stroke-width='2' />
+<text x='102' y='76' font-family='sans-serif' font-size='12'>O3 guarded</text>
+<line x1='80' y1='90' x2='96' y2='90' stroke='#d62728' stroke-width='2' stroke-dasharray='6 4'/>
+<text x='102' y='94' font-family='sans-serif' font-size='12'>O3 contract</text>
+</svg>

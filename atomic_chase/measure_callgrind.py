@@ -47,7 +47,7 @@ def parse_summary(path: str):
 def main():
     out_csv = "results_callgrind.csv"
     out_md = "results_callgrind.md"
-    graph_dir = "graphs_callgrind"
+    graph_dir = os.path.join("graphs", "callgrind")
     os.makedirs(graph_dir, exist_ok=True)
 
     rows = []

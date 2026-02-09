@@ -57,6 +57,9 @@ def run_perf(perf_path: str, binary: str, depth: int, events: list[str]) -> dict
         "-e",
         ",".join(events),
         "--",
+        "taskset",
+        "-c",
+        "0",
         f"./{binary}",
         str(depth),
     ]
@@ -99,7 +102,7 @@ def main():
     event_profile, events = select_event_profile(perf_path)
     out_csv = os.path.join("results_perf.csv")
     out_md = os.path.join("results_perf.md")
-    out_graph_dir = os.path.join("graphs")
+    out_graph_dir = os.path.join("graphs", "perf")
 
     os.makedirs(out_graph_dir, exist_ok=True)
 
@@ -134,8 +137,12 @@ def main():
             vals = " | ".join(str(r.get(e, "")) for e in events)
             f.write(f"| {r['event_profile']} | {r['opt']} | {r['mode']} | {r['depth']} | {vals} |\n")
 
-    # Graphs
-    import matplotlib.pyplot as plt
+    # Graphs (optional)
+    try:
+        import matplotlib.pyplot as plt
+    except ModuleNotFoundError:
+        print("matplotlib not available; skipping graph generation.")
+        return
 
     grouped = defaultdict(list)
     for r in rows:

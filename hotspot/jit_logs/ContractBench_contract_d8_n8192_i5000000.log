@@ -1,0 +1,24 @@
+31    1     n       jdk.internal.misc.Unsafe::getReferenceVolatile (native)   
+35    2             java.lang.Math::floorMod (8 bytes)
+                            @ 3   java.lang.Math::floorMod (28 bytes)   inline (hot)
+36    3             java.lang.Math::floorMod (28 bytes)
+37    4             ContractBench::chaseGuarded (46 bytes)
+41    5 %           ContractBench::runGuarded @ 23 (68 bytes)
+                            @ 55   ContractBench::chaseGuarded (46 bytes)   inline (hot)
+48    6             ContractBench::runGuarded (68 bytes)
+                            @ 55   ContractBench::chaseGuarded (46 bytes)   inline (hot)
+53    5 %           ContractBench::runGuarded @ 23 (68 bytes)   made not entrant
+54    7             ContractBench::chaseContract (19 bytes)
+58    8 %           ContractBench::runContract @ 23 (68 bytes)
+                            @ 55   ContractBench::chaseContract (19 bytes)   inline (hot)
+64    9             ContractBench::runContract (68 bytes)
+67    8 %           ContractBench::runContract @ 23 (68 bytes)   made not entrant
+                            @ 55   ContractBench::chaseContract (19 bytes)   inline (hot)
+71    6             ContractBench::runGuarded (68 bytes)   made not entrant
+75    9             ContractBench::runContract (68 bytes)   made not entrant
+76   10 %           ContractBench::runGuarded @ 23 (68 bytes)
+                            @ 55   ContractBench::chaseGuarded (46 bytes)   inline (hot)
+87   11 %           ContractBench::runContract @ 23 (68 bytes)
+                            @ 55   ContractBench::chaseContract (19 bytes)   inline (hot)
+95   12             ContractBench::runContract (68 bytes)
+                            @ 55   ContractBench::chaseContract (19 bytes)   inline (hot)
