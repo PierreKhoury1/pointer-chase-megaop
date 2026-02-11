@@ -1,0 +1,378 @@
+CompileCommand: compileonly PtrChaseIntrinsicBench.runIntrinsic bool compileonly = true
+### Excluding compile: java.lang.Object::<init>
+made not compilable on level 3  java.lang.Object::<init> (1 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: jdk.internal.misc.Unsafe::getReferenceVolatile
+made not compilable on level 1  jdk.internal.misc.Unsafe::getReferenceVolatile   excluded by CompileCommand
+### Excluding compile: java.lang.String::hashCode
+made not compilable on level 3  java.lang.String::hashCode (60 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: jdk.internal.misc.Unsafe::compareAndSetLong
+made not compilable on level 1  jdk.internal.misc.Unsafe::compareAndSetLong   excluded by CompileCommand
+### Excluding generation of native wrapper: jdk.internal.misc.Unsafe::compareAndSetReference
+made not compilable on level 1  jdk.internal.misc.Unsafe::compareAndSetReference   excluded by CompileCommand
+### Excluding compile: static java.util.concurrent.ConcurrentHashMap::tabAt
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.misc.Unsafe::getReferenceAcquire
+made not compilable on level 3  jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.concurrent.ConcurrentHashMap::spread
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::spread (10 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.ImmutableCollections$SetN$SetNIterator::next
+made not compilable on level 3  java.util.ImmutableCollections$SetN$SetNIterator::next (90 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.concurrent.ConcurrentHashMap::putVal
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::putVal (432 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.concurrent.ConcurrentHashMap$Node::<init>
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap$Node::<init> (20 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.concurrent.ConcurrentHashMap::addCount
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::addCount (280 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.concurrent.ConcurrentHashMap::casTabAt
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::casTabAt (21 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.concurrent.ConcurrentHashMap::putIfAbsent
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::putIfAbsent (8 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.ImmutableCollections$SetN$SetNIterator::hasNext
+made not compilable on level 3  java.util.ImmutableCollections$SetN$SetNIterator::hasNext (13 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ModuleReference::descriptor
+made not compilable on level 1  java.lang.module.ModuleReference::descriptor (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ModuleDescriptor::name
+made not compilable on level 1  java.lang.module.ModuleDescriptor::name (5 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.HashMap::hash
+made not compilable on level 3  java.util.HashMap::hash (20 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ResolvedModule::reference
+made not compilable on level 1  java.lang.module.ResolvedModule::reference (5 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: java.lang.Object::hashCode
+made not compilable on level 1  java.lang.Object::hashCode   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::putVal
+made not compilable on level 3  java.util.HashMap::putVal (300 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::newNode
+made not compilable on level 3  java.util.HashMap::newNode (13 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap$Node::<init>
+made not compilable on level 3  java.util.HashMap$Node::<init> (26 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::afterNodeInsertion
+made not compilable on level 3  java.util.HashMap::afterNodeInsertion (1 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::put
+made not compilable on level 3  java.util.HashMap::put (13 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::getNode
+made not compilable on level 3  java.util.HashMap::getNode (150 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::get
+made not compilable on level 3  java.util.HashMap::get (19 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: static java.lang.Module::addExports0
+made not compilable on level 1  java.lang.Module::addExports0   excluded by CompileCommand
+### Excluding compile: java.lang.module.ModuleDescriptor$Exports::source
+made not compilable on level 1  java.lang.module.ModuleDescriptor$Exports::source (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashSet::add
+made not compilable on level 3  java.util.HashSet::add (20 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: static java.lang.Module::addExportsToAll0
+made not compilable on level 1  java.lang.Module::addExportsToAll0   excluded by CompileCommand
+### Excluding compile: java.util.ImmutableCollections$Set12$1::hasNext
+made not compilable on level 3  java.util.ImmutableCollections$Set12$1::hasNext (13 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ModuleDescriptor$Exports::isQualified
+made not compilable on level 3  java.lang.module.ModuleDescriptor$Exports::isQualified (18 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ModuleDescriptor::isAutomatic
+made not compilable on level 1  java.lang.module.ModuleDescriptor::isAutomatic (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.AbstractMap::<init>
+made not compilable on level 3  java.util.AbstractMap::<init> (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ModuleDescriptor$Exports::targets
+made not compilable on level 1  java.lang.module.ModuleDescriptor$Exports::targets (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.ImmutableCollections$SetN::isEmpty
+made not compilable on level 3  java.util.ImmutableCollections$SetN::isEmpty (13 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.module.ResolvedModule::configuration
+made not compilable on level 1  java.lang.module.ResolvedModule::configuration (5 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: static java.lang.Module::addReads0
+made not compilable on level 1  java.lang.Module::addReads0   excluded by CompileCommand
+### Excluding compile: java.lang.module.ResolvedModule::name
+made not compilable on level 3  java.lang.module.ResolvedModule::name (11 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.ImmutableCollections$Set12$1::next
+made not compilable on level 3  java.util.ImmutableCollections$Set12$1::next (95 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::resize
+made not compilable on level 3  java.util.HashMap::resize (356 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.HashMap::<init>
+made not compilable on level 3  java.util.HashMap::<init> (11 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.ImmutableCollections$Set12::isEmpty
+made not compilable on level 1  java.util.ImmutableCollections$Set12::isEmpty (2 bytes)   excluded by CompileCommand
+130    1     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLL)L (native)   (static)
+132    2     n 0       java.lang.invoke.MethodHandle::linkToStatic(LL)L (native)   (static)
+### Excluding compile: static java.util.Objects::equals
+made not compilable on level 3  java.util.Objects::equals (23 bytes)   excluded by CompileCommand
+134    3     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLL)L (native)   
+134    4     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLLLLL)L (native)   (static)
+### Excluding generation of native wrapper: java.lang.Class::isPrimitive
+made not compilable on level 1  java.lang.Class::isPrimitive   excluded by CompileCommand
+### Excluding generation of native wrapper: static java.lang.System::arraycopy
+made not compilable on level 1  java.lang.System::arraycopy   excluded by CompileCommand
+### Excluding compile: java.lang.String::coder
+made not compilable on level 3  java.lang.String::coder (15 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::isLatin1
+made not compilable on level 3  java.lang.String::isLatin1 (19 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.Preconditions::checkIndex
+made not compilable on level 3  jdk.internal.util.Preconditions::checkIndex (18 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::charAt
+made not compilable on level 3  java.lang.String::charAt (25 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.StringLatin1::charAt
+made not compilable on level 3  java.lang.StringLatin1::charAt (15 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.String::checkIndex
+made not compilable on level 3  java.lang.String::checkIndex (10 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.Enum::ordinal
+made not compilable on level 1  java.lang.Enum::ordinal (5 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.Objects::requireNonNull
+made not compilable on level 3  java.util.Objects::requireNonNull (14 bytes)   excluded by CompileCommand
+139    5     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)V (native)   (static)
+139    6     n 0       java.lang.invoke.MethodHandle::invokeBasic()L (native)   
+### Excluding compile: jdk.internal.util.StrongReferenceKey::get
+made not compilable on level 1  jdk.internal.util.StrongReferenceKey::get (5 bytes)   excluded by CompileCommand
+139    7     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)L (native)   (static)
+141    8     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLL)L (native)   (static)
+### Excluding generation of native wrapper: java.lang.Class::isArray
+made not compilable on level 1  java.lang.Class::isArray   excluded by CompileCommand
+142    9     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLL)L (native)   (static)
+### Excluding compile: java.lang.invoke.MethodType::returnType
+made not compilable on level 1  java.lang.invoke.MethodType::returnType (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.ref.ReferenceQueue::headIsNull
+made not compilable on level 3  java.lang.ref.ReferenceQueue::headIsNull (13 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::length
+made not compilable on level 3  java.lang.String::length (11 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.concurrent.ConcurrentHashMap::get
+made not compilable on level 3  java.util.concurrent.ConcurrentHashMap::get (162 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::equals
+made not compilable on level 3  java.lang.String::equals (56 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.ReferencedKeyMap::removeStaleReferences
+made not compilable on level 3  jdk.internal.util.ReferencedKeyMap::removeStaleReferences (30 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.ref.NativeReferenceQueue::poll
+made not compilable on level 3  java.lang.ref.NativeReferenceQueue::poll (28 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: java.lang.Object::clone
+made not compilable on level 1  java.lang.Object::clone   excluded by CompileCommand
+### Excluding compile: static java.lang.Math::min
+made not compilable on level 3  java.lang.Math::min (11 bytes)   excluded by CompileCommand
+149   10     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLL)V (native)   (static)
+### Excluding compile: static java.lang.invoke.MethodTypeForm::canonicalize
+made not compilable on level 3  java.lang.invoke.MethodTypeForm::canonicalize (74 bytes)   excluded by CompileCommand
+149   11     n 0       java.lang.invoke.MethodHandle::invokeBasic(L)L (native)   
+149   12     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLL)L (native)   (static)
+### Excluding compile: static java.lang.StringLatin1::canEncode
+made not compilable on level 3  java.lang.StringLatin1::canEncode (13 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.misc.PtrChase$Node::<init>
+made not compilable on level 3  jdk.internal.misc.PtrChase$Node::<init> (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.Object::<init>
+made not compilable on level 4  java.lang.Object::<init> (1 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.misc.PtrChase$Node::<init>
+made not compilable on level 4  jdk.internal.misc.PtrChase$Node::<init> (5 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::buildPermutation
+made not compilable on level 3  PtrChaseIntrinsicBench::buildPermutation (157 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::buildPermutation
+made not compilable on level 4  PtrChaseIntrinsicBench::buildPermutation (157 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.random.RandomGenerator::nextInt
+made not compilable on level 3  java.util.random.RandomGenerator::nextInt (10 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.random.RandomSupport::checkBound
+made not compilable on level 3  jdk.internal.util.random.RandomSupport::checkBound (15 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.random.RandomSupport::boundedNextInt
+made not compilable on level 3  jdk.internal.util.random.RandomSupport::boundedNextInt (58 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.SplittableRandom::nextInt
+made not compilable on level 3  java.util.SplittableRandom::nextInt (8 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.SplittableRandom::nextSeed
+made not compilable on level 3  java.util.SplittableRandom::nextSeed (15 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.SplittableRandom::mix32
+made not compilable on level 3  java.util.SplittableRandom::mix32 (26 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.SplittableRandom::nextInt
+made not compilable on level 4  java.util.SplittableRandom::nextInt (8 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.SplittableRandom::nextSeed
+made not compilable on level 4  java.util.SplittableRandom::nextSeed (15 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.SplittableRandom::mix32
+made not compilable on level 4  java.util.SplittableRandom::mix32 (26 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.random.RandomGenerator::nextInt
+made not compilable on level 4  java.util.random.RandomGenerator::nextInt (10 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.random.RandomSupport::checkBound
+made not compilable on level 4  jdk.internal.util.random.RandomSupport::checkBound (15 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.random.RandomSupport::boundedNextInt
+made not compilable on level 4  jdk.internal.util.random.RandomSupport::boundedNextInt (58 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.misc.PtrChase::chase8
+made not compilable on level 3  jdk.internal.misc.PtrChase::chase8 (90 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.misc.PtrChase::chase8
+made not compilable on level 4  jdk.internal.misc.PtrChase::chase8 (90 bytes)   excluded by CompileCommand
+305   13 %  b  3       PtrChaseIntrinsicBench::runIntrinsic @ 4 (22 bytes)
+306   14    b  3       PtrChaseIntrinsicBench::runIntrinsic (22 bytes)
+320   15 %  b  4       PtrChaseIntrinsicBench::runIntrinsic @ 4 (22 bytes)
+334   13 %     3       PtrChaseIntrinsicBench::runIntrinsic @ 4 (22 bytes)   made not entrant
+372   15 %     4       PtrChaseIntrinsicBench::runIntrinsic @ 4 (22 bytes)   made not entrant
+### Excluding compile: static PtrChaseIntrinsicBench::chase8_guarded
+made not compilable on level 3  PtrChaseIntrinsicBench::chase8_guarded (90 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::chase8_guarded
+made not compilable on level 4  PtrChaseIntrinsicBench::chase8_guarded (90 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::runGuarded
+made not compilable on level 3  PtrChaseIntrinsicBench::runGuarded (22 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::runGuarded
+made not compilable on level 4  PtrChaseIntrinsicBench::runGuarded (22 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::chase8_contract
+made not compilable on level 3  PtrChaseIntrinsicBench::chase8_contract (45 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::chase8_contract
+made not compilable on level 4  PtrChaseIntrinsicBench::chase8_contract (45 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::runContract
+made not compilable on level 3  PtrChaseIntrinsicBench::runContract (22 bytes)   excluded by CompileCommand
+### Excluding compile: static PtrChaseIntrinsicBench::runContract
+made not compilable on level 4  PtrChaseIntrinsicBench::runContract (22 bytes)   excluded by CompileCommand
+686   16 %  b  4       PtrChaseIntrinsicBench::runIntrinsic @ 4 (22 bytes)
+703   17    b  4       PtrChaseIntrinsicBench::runIntrinsic (22 bytes)
+717   14       3       PtrChaseIntrinsicBench::runIntrinsic (22 bytes)   made not entrant
+### Excluding compile: java.lang.module.ModuleDescriptor::isOpen
+made not compilable on level 1  java.lang.module.ModuleDescriptor::isOpen (5 bytes)   excluded by CompileCommand
+1879   18     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLL)L (native)   (static)
+### Excluding compile: java.lang.invoke.MethodType::hashCode
+made not compilable on level 3  java.lang.invoke.MethodType::hashCode (53 bytes)   excluded by CompileCommand
+1879   19     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLL)L (native)   
+### Excluding compile: java.lang.invoke.MemberName::getDeclaringClass
+made not compilable on level 1  java.lang.invoke.MemberName::getDeclaringClass (5 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.ReferencedKeyMap::lookupKey
+made not compilable on level 3  jdk.internal.util.ReferencedKeyMap::lookupKey (9 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.StrongReferenceKey::<init>
+made not compilable on level 3  jdk.internal.util.StrongReferenceKey::<init> (10 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.StrongReferenceKey::hashCode
+made not compilable on level 3  jdk.internal.util.StrongReferenceKey::hashCode (8 bytes)   excluded by CompileCommand
+1880   20     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLLLL)L (native)   (static)
+1881   21     n 0       java.lang.invoke.MethodHandle::linkToStatic(DL)L (native)   (static)
+### Excluding compile: static java.lang.invoke.MethodType::checkSlotCount
+made not compilable on level 3  java.lang.invoke.MethodType::checkSlotCount (33 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MemberName::isInvocable
+made not compilable on level 3  java.lang.invoke.MemberName::isInvocable (8 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MemberName::anyFlagSet
+made not compilable on level 3  java.lang.invoke.MemberName::anyFlagSet (15 bytes)   excluded by CompileCommand
+1882   22     n 0       java.lang.invoke.MethodHandle::linkToStatic(LJL)L (native)   (static)
+1882   23     n 0       java.lang.invoke.MethodHandle::invokeBasic(LJ)L (native)   
+1882   24     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLJL)L (native)   (static)
+### Excluding compile: static java.util.Objects::requireNonNull
+made not compilable on level 3  java.util.Objects::requireNonNull (15 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.StringLatin1::equals
+made not compilable on level 3  java.lang.StringLatin1::equals (36 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.ArraysSupport::signedHashCode
+made not compilable on level 3  jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MethodType::form
+made not compilable on level 1  java.lang.invoke.MethodType::form (5 bytes)   excluded by CompileCommand
+1884   25     n 0       java.lang.invoke.MethodHandle::linkToStatic(JLLLL)J (native)   (static)
+### Excluding compile: java.lang.invoke.MethodType::ptypes
+made not compilable on level 1  java.lang.invoke.MethodType::ptypes (5 bytes)   excluded by CompileCommand
+1885   26     n 0       java.lang.invoke.MethodHandle::invokeBasic(JLLL)J (native)   
+1885   27     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLLLL)J (native)   (static)
+### Excluding compile: java.lang.invoke.MethodType::parameterType
+made not compilable on level 3  java.lang.invoke.MethodType::parameterType (7 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.ReferencedKeyMap::get
+made not compilable on level 3  jdk.internal.util.ReferencedKeyMap::get (10 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.ReferencedKeyMap::getNoCheckStale
+made not compilable on level 3  jdk.internal.util.ReferencedKeyMap::getNoCheckStale (22 bytes)   excluded by CompileCommand
+### Excluding compile: java.util.AbstractCollection::<init>
+made not compilable on level 3  java.util.AbstractCollection::<init> (5 bytes)   excluded by CompileCommand
+1886   28     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLL)L (native)   (static)
+1886   29     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLL)L (native)   
+### Excluding compile: java.lang.AbstractStringBuilder::ensureCapacityInternal
+made not compilable on level 3  java.lang.AbstractStringBuilder::ensureCapacityInternal (39 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.StringLatin1::indexOfChar
+made not compilable on level 3  java.lang.StringLatin1::indexOfChar (33 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.SymbolTable::get
+made not compilable on level 3  jdk.internal.org.objectweb.asm.SymbolTable::get (13 bytes)   excluded by CompileCommand
+1888   30     n 0       java.lang.invoke.MethodHandle::invokeBasic(JLL)J (native)   
+1888   31     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLLL)J (native)   (static)
+### Excluding compile: static java.lang.Math::max
+made not compilable on level 3  java.lang.Math::max (11 bytes)   excluded by CompileCommand
+### Excluding compile: static jdk.internal.org.objectweb.asm.SymbolTable::hash
+made not compilable on level 3  jdk.internal.org.objectweb.asm.SymbolTable::hash (10 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.ByteVector::putUTF8
+made not compilable on level 3  jdk.internal.org.objectweb.asm.ByteVector::putUTF8 (144 bytes)   excluded by CompileCommand
+1890   32     n 0       java.lang.invoke.MethodHandle::linkToStatic(JL)L (native)   (static)
+### Excluding compile: java.lang.Class::getClassLoader
+made not compilable on level 3  java.lang.Class::getClassLoader (28 bytes)   excluded by CompileCommand
+1891   33     n 0       java.lang.invoke.MethodHandle::invokeBasic(J)L (native)   
+1891   34     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJL)L (native)   (static)
+### Excluding compile: jdk.internal.org.objectweb.asm.Symbol::<init>
+made not compilable on level 3  jdk.internal.org.objectweb.asm.Symbol::<init> (38 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.SymbolTable::put
+made not compilable on level 3  jdk.internal.org.objectweb.asm.SymbolTable::put (150 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.ByteVector::putShort
+made not compilable on level 3  jdk.internal.org.objectweb.asm.ByteVector::putShort (52 bytes)   excluded by CompileCommand
+1893   35     n 0       java.lang.invoke.MethodHandle::linkToStatic(JLL)J (native)   (static)
+### Excluding compile: static java.lang.invoke.LambdaForm::argument
+made not compilable on level 3  java.lang.invoke.LambdaForm::argument (27 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.invoke.LambdaForm$BasicType::basicType
+made not compilable on level 3  java.lang.invoke.LambdaForm$BasicType::basicType (187 bytes)   excluded by CompileCommand
+1893   36     n 0       java.lang.invoke.MethodHandle::invokeBasic(JL)J (native)   
+1894   37     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLL)J (native)   (static)
+### Excluding compile: static java.lang.invoke.LambdaForm$BasicType::basicType
+made not compilable on level 3  java.lang.invoke.LambdaForm$BasicType::basicType (8 bytes)   excluded by CompileCommand
+### Excluding compile: static sun.invoke.util.Wrapper::basicTypeChar
+made not compilable on level 3  sun.invoke.util.Wrapper::basicTypeChar (18 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.WeakReferenceKey::hashCode
+made not compilable on level 1  jdk.internal.util.WeakReferenceKey::hashCode (5 bytes)   excluded by CompileCommand
+1895   38     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLJL)L (native)   (static)
+### Excluding compile: java.lang.invoke.MethodTypeForm::parameterSlotCount
+made not compilable on level 1  java.lang.invoke.MethodTypeForm::parameterSlotCount (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.LambdaForm$Name::initIndex
+made not compilable on level 3  java.lang.invoke.LambdaForm$Name::initIndex (26 bytes)   excluded by CompileCommand
+1895   39     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLJ)L (native)   
+### Excluding compile: java.lang.AbstractStringBuilder::isLatin1
+made not compilable on level 3  java.lang.AbstractStringBuilder::isLatin1 (19 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.SymbolTable$Entry::<init>
+made not compilable on level 3  jdk.internal.org.objectweb.asm.SymbolTable$Entry::<init> (17 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::isLatin1
+made not compilable on level 4  java.lang.String::isLatin1 (19 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.SymbolTable::addConstantUtf8
+made not compilable on level 3  jdk.internal.org.objectweb.asm.SymbolTable::addConstantUtf8 (98 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MemberName::initResolved
+made not compilable on level 3  java.lang.invoke.MemberName::initResolved (53 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MemberName::allFlagsSet
+made not compilable on level 3  java.lang.invoke.MemberName::allFlagsSet (16 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: static java.lang.invoke.MethodHandleNatives::resolve
+made not compilable on level 1  java.lang.invoke.MethodHandleNatives::resolve   excluded by CompileCommand
+### Excluding compile: static java.lang.invoke.MethodType::checkPtypes
+made not compilable on level 3  java.lang.invoke.MethodType::checkPtypes (76 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.Arrays::copyOfRange
+made not compilable on level 3  java.util.Arrays::copyOfRange (25 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.AbstractStringBuilder::length
+made not compilable on level 1  java.lang.AbstractStringBuilder::length (5 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.invoke.MethodType::makeImpl
+made not compilable on level 3  java.lang.invoke.MethodType::makeImpl (109 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MethodType::<init>
+made not compilable on level 3  java.lang.invoke.MethodType::<init> (15 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.util.ReferencedKeySet::get
+made not compilable on level 3  jdk.internal.util.ReferencedKeySet::get (27 bytes)   excluded by CompileCommand
+1898   40     n 0       java.lang.invoke.MethodHandle::invokeBasic(L)J (native)   
+1898   41     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLL)J (native)   (static)
+### Excluding compile: java.lang.AbstractStringBuilder::getValue
+made not compilable on level 1  java.lang.AbstractStringBuilder::getValue (5 bytes)   excluded by CompileCommand
+### Excluding compile: jdk.internal.org.objectweb.asm.ByteVector::putByte
+made not compilable on level 3  jdk.internal.org.objectweb.asm.ByteVector::putByte (39 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: java.lang.Class::isAssignableFrom
+made not compilable on level 1  java.lang.Class::isAssignableFrom   excluded by CompileCommand
+### Excluding compile: static jdk.internal.util.Preconditions::checkIndex
+made not compilable on level 4  jdk.internal.util.Preconditions::checkIndex (18 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::charAt
+made not compilable on level 4  java.lang.String::charAt (25 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.StringLatin1::charAt
+made not compilable on level 4  java.lang.StringLatin1::charAt (15 bytes)   excluded by CompileCommand
+### Excluding compile: static java.lang.String::checkIndex
+made not compilable on level 4  java.lang.String::checkIndex (10 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.String::getBytes
+made not compilable on level 3  java.lang.String::getBytes (44 bytes)   excluded by CompileCommand
+1900   42     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLLL)L (native)   (static)
+### Excluding compile: static sun.invoke.util.VerifyAccess::isTypeVisible
+made not compilable on level 3  sun.invoke.util.VerifyAccess::isTypeVisible (118 bytes)   excluded by CompileCommand
+### Excluding generation of native wrapper: java.lang.Class::isInterface
+made not compilable on level 1  java.lang.Class::isInterface   excluded by CompileCommand
+### Excluding compile: static java.util.Arrays::copyOfRangeByte
+made not compilable on level 3  java.util.Arrays::copyOfRangeByte (33 bytes)   excluded by CompileCommand
+### Excluding compile: static java.util.Arrays::checkLength
+made not compilable on level 3  java.util.Arrays::checkLength (38 bytes)   excluded by CompileCommand
+1901   43     n 0       java.lang.invoke.MethodHandle::invokeBasic(D)L (native)   
+1901   44     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LDL)L (native)   (static)
+### Excluding compile: sun.invoke.util.Wrapper::basicTypeChar
+made not compilable on level 1  sun.invoke.util.Wrapper::basicTypeChar (5 bytes)   excluded by CompileCommand
+1902   45     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLLL)L (native)   
+### Excluding compile: java.lang.StringBuilder::append
+made not compilable on level 3  java.lang.StringBuilder::append (8 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.AbstractStringBuilder::append
+made not compilable on level 3  java.lang.AbstractStringBuilder::append (45 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.AbstractStringBuilder::putStringAt
+made not compilable on level 3  java.lang.AbstractStringBuilder::putStringAt (19 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.AbstractStringBuilder::inflateIfNeededFor
+made not compilable on level 3  java.lang.AbstractStringBuilder::inflateIfNeededFor (22 bytes)   excluded by CompileCommand
+intrinsic ms=470.588566
+### Excluding compile: java.lang.invoke.MethodType::parameterCount
+made not compilable on level 3  java.lang.invoke.MethodType::parameterCount (6 bytes)   excluded by CompileCommand
+guarded   ms=1857.539961
+### Excluding compile: java.lang.invoke.MethodTypeForm::erasedType
+made not compilable on level 1  java.lang.invoke.MethodTypeForm::erasedType (5 bytes)   excluded by CompileCommand
+### Excluding compile: java.lang.invoke.MethodHandle::type
+made not compilable on level 1  java.lang.invoke.MethodHandle::type (5 bytes)   excluded by CompileCommand
+contract  ms=1142.997181

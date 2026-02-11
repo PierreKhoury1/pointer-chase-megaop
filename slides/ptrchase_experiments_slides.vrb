@@ -1,0 +1,16 @@
+\frametitle{Code: Contract Variant (Collapsed Control-Flow)}
+\scriptsize
+\begin{verbatim}
+static PtrChase.Node chase8_contract(PtrChase.Node p) {
+  try {
+    p = p.next; p = p.next; p = p.next; p = p.next;
+    p = p.next; p = p.next; p = p.next; p = p.next;
+    return p;
+  } catch (NullPointerException e) {
+    return null;
+  }
+}
+\end{verbatim}
+  \vspace{1mm}
+  \scriptsize
+  Contract removes explicit checks and relies on the exception path to terminate; the goal is fewer branches/guards.
