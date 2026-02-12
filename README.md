@@ -1,96 +1,77 @@
 # Pointer Chasing Mega-Instruction Study
 
-This repo investigates how pointer chasing expands into loads, guards, and control flow in both AOT compilers and JITs, and then prototypes a semantic "mega-instruction" model (atomic chase) to motivate structural collapse.
+This repository studies pointer-chase behavior across AOT, HotSpot, and native C experiments, then compares structural effects (loads, branches, checks) against measured latency behavior.
 
-## What is here
+## Strict Layout
 
-### 1) AOT evidence (C -> GCC/Clang)
-We generate structurally comparable pointer-chase variants and count:
-- load instructions
-- branches
-- basic blocks
-- total instruction count
+- `experiments/aot/`: AOT generation, assembly, cross-layer merge, and AOT plots.
+- `experiments/hotspot/`: Java sources, HotSpot scripts, logs, data, and plots.
+- `experiments/atomic_chase/`: native C pointer-chase prototype with perf/callgrind data and plots.
+- `analysis/`: cross-experiment summary tables/reports and metadata.
+- `slides/`: presentation decks (`.tex/.pdf`) and slide assets (`plots/`, `tables/`).
+- `docs/notes/`: handoff and working notes.
+- `docs/screenshots/`: reference screenshots.
 
-Key outputs:
-- `build/results_aot.csv`, `build/results_aot.md`
-- `build/graphs/combined_graphs/*.png`
+## Experiment Substructure
 
-### 2) HotSpot/JVM evidence
-We mirror the same depth/pattern matrix in Java and log JIT data. Since product JVMs do not expose C2 IR nodes, we use bytecode parse proxies and `uncommon_trap` counts:
-- deref ops (getfield/array loads)
-- guards (null/type/range)
-- deopts (uncommon_trap)
-- IR proxy counts
+Each experiment area uses the same pattern where possible:
 
-Key outputs:
-- `build/hotspot/results_hotspot.csv`, `build/hotspot/results_hotspot.md`
-- `build/graphs/aot_vs_hotspot_graphs/*.png`
+- `src/`: source code
+- `scripts/`: measurement/plotting scripts
+- `data/raw/`: CSV/TXT/raw counter outputs
+- `data/processed/`: markdown summaries
+- `plots/`: generated figures
+- `logs/`: runtime/compiler logs (when applicable)
 
-### 3) Atomic chase prototype (C)
-We define a semantic "mega-instruction" model:
-- **Naive**: pointer chase in a loop.
-- **Atomic**: upfront null checks + straight-line dataflow + single return.
-
-Code lives in `atomic_chase/` with:
-- `chase.c/h` (implementations)
-- `bench.c` (tight loop harness)
-- `Makefile` (O2/O3, naive/atomic binaries)
-
-### 4) Callgrind (WSL-safe) estimates
-Because hardware perf counters are unavailable in WSL, we use Valgrind/Callgrind to estimate:
-- instruction references (Ir)
-- conditional branches (Bc)
-- branch mispredicts (Bcm)
-
-Key outputs:
-- `atomic_chase/results_callgrind.csv`
-- `atomic_chase/graphs_callgrind/*.png`
-
-## Slides
-The current narrative and graphs are compiled into:
-- `slides/pointer_chase_slides.pdf`
-
-Source:
-- `slides/pointer_chase_slides.tex`
-
-## How to reproduce (high level)
+## Important Paths
 
 ### AOT
-```
-python3 measure_pointer_chasing.py
-python3 plot_results.py
-python3 combine_aot_hotspot.py
+- Scripts: `experiments/aot/scripts/`
+- Assembly: `experiments/aot/asm/`
+- Generated source: `experiments/aot/generated/generated_pointer_chase.c`
+- Data: `experiments/aot/data/raw/`, `experiments/aot/data/processed/`
+- Plots: `experiments/aot/plots/`
+
+### HotSpot
+- Java: `experiments/hotspot/src/`
+- Scripts: `experiments/hotspot/scripts/`
+- JNI: `experiments/hotspot/jni/`
+- Logs: `experiments/hotspot/logs/`
+- Data: `experiments/hotspot/data/raw/`, `experiments/hotspot/data/processed/`
+- Plots: `experiments/hotspot/plots/`
+
+### Atomic Chase (C)
+- Sources: `experiments/atomic_chase/src/`
+- Scripts: `experiments/atomic_chase/scripts/`
+- Data: `experiments/atomic_chase/data/raw/`, `experiments/atomic_chase/data/processed/`
+- Plots: `experiments/atomic_chase/plots/`
+- IR analysis: `experiments/atomic_chase/analysis/ir_megaop/`
+
+## Reproduce (high level)
+
+### AOT
+```bash
+python3 experiments/aot/scripts/measure_pointer_chasing.py
+python3 experiments/aot/scripts/plot_results.py
+python3 experiments/aot/scripts/combine_aot_hotspot.py
 ```
 
 ### HotSpot
-```
-python3 measure_hotspot.py
+```bash
+python3 experiments/aot/scripts/measure_hotspot.py
+# and/or
+python3 experiments/hotspot/scripts/measure_contract_jit_perf.py
 ```
 
-### Atomic chase + Callgrind (WSL-safe)
-```
-# in WSL
+### Atomic Chase
+```bash
+cd experiments/atomic_chase
 make
-python3 measure_callgrind.py
+python3 scripts/measure_callgrind.py
+python3 scripts/measure_perf.py
 ```
 
-## Why this approach?
-We want structural proof (not just timing):
-- AOT shows the compiler's emitted structure.
-- JIT shows guards/deopts that inflate the chase.
-- If both scale as O(depth), a single semantic unit is justified.
+## Notes
 
-The atomic chase prototype isolates control-flow collapse without changing algorithms.
-
-## Current status
-- AOT tables + graphs: done
-- HotSpot proxy tables + graphs: done
-- Atomic chase prototype: done
-- Callgrind estimates: done
-- Hardware perf (native Linux): pending
-
-## Next steps
-1. Run perf on native Linux and add true hardware counter graphs.
-2. (Optional) fastdebug JVM for true C2 IR node counts.
-3. Update slides with hardware-counter results.
-
+- Generated binaries (`.class`, `.so`, benchmark executables) are not kept in the tracked layout.
+- LaTeX auxiliary files are ignored; only slide sources and final PDFs are retained.

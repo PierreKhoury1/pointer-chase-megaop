@@ -1,2 +1,29 @@
 openjdk-src/
 openjdk-jdk21u/
+
+# Java build artifacts
+*.class
+**/*.class
+__pycache__/
+*.pyc
+
+# Native build artifacts
+*.o
+*.so
+*.a
+experiments/*/bin/
+experiments/*/.build/
+
+# Runtime/compiler logs
+*.pid
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk
